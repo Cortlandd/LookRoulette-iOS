@@ -1,6 +1,6 @@
 //
 //  NetworkManager.swift
-//  Makeup Roulette
+//  Look Roulette
 //
 //  Created by Cortland Walker on 3/8/19.
 //  Copyright © 2019 Fedha. All rights reserved.
@@ -28,7 +28,7 @@ struct NetworkManager {
     let youtubeAPIRouter = Router<YouTubeApi>()
     
     // Function for searching Query
-    func searchVideoItems(params: Parameters, completion: @escaping (_ items: [Items]?, _ error: String?) -> ()) {
+    func searchVideoItems(params: Parameters, completion: @escaping (_ response: YouTubeApiSearchResponse?, _ error: String?) -> ()) {
         
         youtubeAPIRouter.request(.search(params: params)) { data, response, error in
             
@@ -47,10 +47,8 @@ struct NetworkManager {
                     }
                     
                     do {
-                        
                         let searchApiResponse = try JSONDecoder().decode(YouTubeApiSearchResponse.self, from: responseData)
-                        
-                        completion(searchApiResponse.items, nil)
+                        completion(searchApiResponse.self, nil)
                     } catch {
                         completion(nil, "Unable to decode")
                     }

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7FEE1EC222C84B62006B197E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE1EC122C84B62006B197E /* AppDelegate.swift */; };
 		7FEE1EC422C84B62006B197E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE1EC322C84B62006B197E /* FirstViewController.swift */; };
-		7FEE1EC622C84B62006B197E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE1EC522C84B62006B197E /* SecondViewController.swift */; };
 		7FEE1EC922C84B62006B197E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FEE1EC722C84B62006B197E /* Main.storyboard */; };
 		7FEE1ECB22C84B63006B197E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FEE1ECA22C84B63006B197E /* Assets.xcassets */; };
 		7FEE1ECE22C84B63006B197E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FEE1ECC22C84B63006B197E /* LaunchScreen.storyboard */; };
@@ -26,13 +25,14 @@
 		7FEE1EEF22C84B93006B197E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE1EE422C84B93006B197E /* Router.swift */; };
 		7FEE1EF322C84BB2006B197E /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE1EF122C84BB2006B197E /* Bookmark.swift */; };
 		7FEE1EF422C84BB2006B197E /* YouTube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE1EF222C84BB2006B197E /* YouTube.swift */; };
+		7FEE1EFA22C851FF006B197E /* LooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE1EF922C851FF006B197E /* LooksTableViewController.swift */; };
+		7FEE1EFE22C8E0B4006B197E /* LooksImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE1EFD22C8E0B4006B197E /* LooksImageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7FEE1EBE22C84B62006B197E /* Look Roulette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Look Roulette.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FEE1EC122C84B62006B197E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FEE1EC322C84B62006B197E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		7FEE1EC522C84B62006B197E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		7FEE1EC822C84B62006B197E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7FEE1ECA22C84B63006B197E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FEE1ECD22C84B63006B197E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +50,8 @@
 		7FEE1EE422C84B93006B197E /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		7FEE1EF122C84BB2006B197E /* Bookmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bookmark.swift; sourceTree = "<group>"; };
 		7FEE1EF222C84BB2006B197E /* YouTube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTube.swift; sourceTree = "<group>"; };
+		7FEE1EF922C851FF006B197E /* LooksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LooksTableViewController.swift; sourceTree = "<group>"; };
+		7FEE1EFD22C8E0B4006B197E /* LooksImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LooksImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,11 +88,12 @@
 				7FEE1ED522C84B93006B197E /* Networking */,
 				7FEE1EC122C84B62006B197E /* AppDelegate.swift */,
 				7FEE1EC322C84B62006B197E /* FirstViewController.swift */,
-				7FEE1EC522C84B62006B197E /* SecondViewController.swift */,
 				7FEE1EC722C84B62006B197E /* Main.storyboard */,
 				7FEE1ECA22C84B63006B197E /* Assets.xcassets */,
 				7FEE1ECC22C84B63006B197E /* LaunchScreen.storyboard */,
 				7FEE1ECF22C84B63006B197E /* Info.plist */,
+				7FEE1EF922C851FF006B197E /* LooksTableViewController.swift */,
+				7FEE1EFD22C8E0B4006B197E /* LooksImageCell.swift */,
 			);
 			path = "Look Roulette";
 			sourceTree = "<group>";
@@ -225,15 +228,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FEE1EFE22C8E0B4006B197E /* LooksImageCell.swift in Sources */,
 				7FEE1EED22C84B93006B197E /* NetworkLogger.swift in Sources */,
 				7FEE1EE822C84B93006B197E /* YouTubeEndPoint.swift in Sources */,
 				7FEE1EE522C84B93006B197E /* JSONParameterEncoder.swift in Sources */,
 				7FEE1EEA22C84B93006B197E /* EndPointType.swift in Sources */,
-				7FEE1EC622C84B62006B197E /* SecondViewController.swift in Sources */,
 				7FEE1EF422C84BB2006B197E /* YouTube.swift in Sources */,
 				7FEE1EF322C84BB2006B197E /* Bookmark.swift in Sources */,
 				7FEE1EE722C84B93006B197E /* URLParameterEncoder.swift in Sources */,
 				7FEE1EE922C84B93006B197E /* NetworkManager.swift in Sources */,
+				7FEE1EFA22C851FF006B197E /* LooksTableViewController.swift in Sources */,
 				7FEE1EE622C84B93006B197E /* ParameterEncoding.swift in Sources */,
 				7FEE1EEE22C84B93006B197E /* NetworkRouter.swift in Sources */,
 				7FEE1EEC22C84B93006B197E /* HTTPTask.swift in Sources */,

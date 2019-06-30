@@ -1,6 +1,6 @@
 //
 //  YouTube.swift
-//  Cos Roulette
+//  Look Roulette
 //
 //  Created by Cortland Walker on 3/8/19.
 //  Copyright © 2019 Cortland Walker. All rights reserved.
@@ -86,33 +86,33 @@ extension Snippet: Decodable {
 }
 
 struct Thumbnails {
-    var medium: Medium
+    var high: High
 }
 extension Thumbnails: Decodable {
     
     enum ThumbnailsCodingKeys: String, CodingKey {
-        case medium
+        case high
     }
     
     init(decoder: Decoder) throws {
         let thumbnailsContainer = try decoder.container(keyedBy: ThumbnailsCodingKeys.self)
         
-        medium = try thumbnailsContainer.decode(Medium.self, forKey: .medium)
+        high = try thumbnailsContainer.decode(High.self, forKey: .high)
     }
 }
 
-struct Medium {
+struct High {
     var url: String
 }
-extension Medium: Decodable {
+extension High: Decodable {
     
-    enum MediumCodingKeys: String, CodingKey {
+    enum HighCodingKeys: String, CodingKey {
         case url
     }
     
     init(from decoder: Decoder) throws {
-        let mediumContainer = try decoder.container(keyedBy: MediumCodingKeys.self)
+        let highContainer = try decoder.container(keyedBy: HighCodingKeys.self)
         
-        url = try mediumContainer.decode(String.self, forKey: .url)
+        url = try highContainer.decode(String.self, forKey: .url)
     }
 }
