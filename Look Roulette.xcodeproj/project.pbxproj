@@ -32,6 +32,7 @@
 		7FEE1F0222C99D10006B197E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE1F0122C99D10006B197E /* Extensions.swift */; };
 		7FEE1F0822CAF074006B197E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE1F0722CAF074006B197E /* ImagePicker.swift */; };
 		7FEE1F0A22CB0774006B197E /* ModifyLookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE1F0922CB0774006B197E /* ModifyLookViewController.swift */; };
+		7FEE1F0E22CC1F1B006B197E /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE1F0D22CC1F1B006B197E /* FiltersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		7FEE1F0122C99D10006B197E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7FEE1F0722CAF074006B197E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		7FEE1F0922CB0774006B197E /* ModifyLookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyLookViewController.swift; sourceTree = "<group>"; };
+		7FEE1F0D22CC1F1B006B197E /* FiltersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
 		80370C6E0EF55EEAA5870083 /* Pods-Look Roulette.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Look Roulette.release.xcconfig"; path = "Target Support Files/Pods-Look Roulette/Pods-Look Roulette.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +132,7 @@
 				7FEE1F0122C99D10006B197E /* Extensions.swift */,
 				7FEE1F0722CAF074006B197E /* ImagePicker.swift */,
 				7FEE1F0922CB0774006B197E /* ModifyLookViewController.swift */,
+				7FEE1F0D22CC1F1B006B197E /* FiltersViewController.swift */,
 			);
 			path = "Look Roulette";
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				7FEE1EC222C84B62006B197E /* AppDelegate.swift in Sources */,
 				7FEE1F0822CAF074006B197E /* ImagePicker.swift in Sources */,
 				7FEE1EEB22C84B93006B197E /* HTTPMethod.swift in Sources */,
+				7FEE1F0E22CC1F1B006B197E /* FiltersViewController.swift in Sources */,
 				7FEE1EC422C84B62006B197E /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,6 +18,7 @@ class LooksTableViewController: UITableViewController {
      */
     
     // YouTube API Key
+    // Place this somewhere else
     var API_SEARCH_KEY: String = "AIzaSyCyhv7a5gFLkEBVRDU8DKmBcSuMPmMyCoU"
     
     var searchResults: [Items]!
@@ -92,6 +93,8 @@ class LooksTableViewController: UITableViewController {
                 let looksDetailViewController = segue.destination as! LookDetailsViewController
                 looksDetailViewController.items = items
             }
+        case "LookFilters":
+            print("Hello")
         default:
             preconditionFailure("Unexpected segue identifier.")
         }
