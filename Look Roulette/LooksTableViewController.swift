@@ -37,7 +37,7 @@ class LooksTableViewController: UITableViewController {
         
         searchResults = [Items]()
         
-        //searchVideo()
+        searchVideo()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -82,8 +82,33 @@ class LooksTableViewController: UITableViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "LookDetails":
+            if let row = tableView.indexPathForSelectedRow?.row {
+                let video = searchResults[row]
+                let items = getItemFromId(videoId: video.id.videoId)
+                
+                let looksDetailViewController = segue.destination as! LookDetailsViewController
+                looksDetailViewController.items = items
+            }
+        default:
+            preconditionFailure("Unexpected segue identifier.")
+        }
+    }
+    
     func getBaseSearchQuery() -> String {
         return baseSearchQuery
+    }
+    
+    func getItemFromId(videoId: String) -> Items {
+        var h = [Items]()
+        for i in searchResults {
+            if i.id.videoId == videoId {
+                h.append(i)
+            }
+        }
+        return h[0]
     }
 
     // MARK: - Table view data source
@@ -97,7 +122,6 @@ class LooksTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return searchResults.count
     }
-    
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         
@@ -129,7 +153,8 @@ class LooksTableViewController: UITableViewController {
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = UITableView.automaticDimension
         
-        tableView.backgroundView = _noResultsView
+        // CLEAN UP NO RESULT
+        //tableView.backgroundView = _noResultsView
         
     }
 
@@ -178,21 +203,4 @@ class LooksTableViewController: UITableViewController {
     }
     */
 
-}
-
-/*
- * Extension to UIImageView for loading images
- */
-extension UIImageView {
-    func load(url: URL) {
-        DispatchQueue.global().async { [weak self] in
-            if let data = try? Data(contentsOf: url) {
-                if let image = UIImage(data: data) {
-                    DispatchQueue.main.async {
-                        self?.image = image
-                    }
-                }
-            }
-        }
-    }
 }

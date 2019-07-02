@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		680A757AB04431718E337BED /* Pods_Look_Roulette.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 786BC1E96C556D2436FD6FF7 /* Pods_Look_Roulette.framework */; };
 		7FEE1EC222C84B62006B197E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE1EC122C84B62006B197E /* AppDelegate.swift */; };
-		7FEE1EC422C84B62006B197E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE1EC322C84B62006B197E /* FirstViewController.swift */; };
+		7FEE1EC422C84B62006B197E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE1EC322C84B62006B197E /* HomeViewController.swift */; };
 		7FEE1EC922C84B62006B197E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FEE1EC722C84B62006B197E /* Main.storyboard */; };
 		7FEE1ECB22C84B63006B197E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FEE1ECA22C84B63006B197E /* Assets.xcassets */; };
 		7FEE1ECE22C84B63006B197E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FEE1ECC22C84B63006B197E /* LaunchScreen.storyboard */; };
@@ -27,12 +28,17 @@
 		7FEE1EF422C84BB2006B197E /* YouTube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE1EF222C84BB2006B197E /* YouTube.swift */; };
 		7FEE1EFA22C851FF006B197E /* LooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE1EF922C851FF006B197E /* LooksTableViewController.swift */; };
 		7FEE1EFE22C8E0B4006B197E /* LooksImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE1EFD22C8E0B4006B197E /* LooksImageCell.swift */; };
+		7FEE1F0022C99840006B197E /* LookDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE1EFF22C99840006B197E /* LookDetailsViewController.swift */; };
+		7FEE1F0222C99D10006B197E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE1F0122C99D10006B197E /* Extensions.swift */; };
+		7FEE1F0822CAF074006B197E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE1F0722CAF074006B197E /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2705602E2871BDDBCF0BE564 /* Pods-Look Roulette.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Look Roulette.debug.xcconfig"; path = "Target Support Files/Pods-Look Roulette/Pods-Look Roulette.debug.xcconfig"; sourceTree = "<group>"; };
+		786BC1E96C556D2436FD6FF7 /* Pods_Look_Roulette.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Look_Roulette.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FEE1EBE22C84B62006B197E /* Look Roulette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Look Roulette.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FEE1EC122C84B62006B197E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7FEE1EC322C84B62006B197E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		7FEE1EC322C84B62006B197E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7FEE1EC822C84B62006B197E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7FEE1ECA22C84B63006B197E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FEE1ECD22C84B63006B197E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +58,10 @@
 		7FEE1EF222C84BB2006B197E /* YouTube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTube.swift; sourceTree = "<group>"; };
 		7FEE1EF922C851FF006B197E /* LooksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LooksTableViewController.swift; sourceTree = "<group>"; };
 		7FEE1EFD22C8E0B4006B197E /* LooksImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LooksImageCell.swift; sourceTree = "<group>"; };
+		7FEE1EFF22C99840006B197E /* LookDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookDetailsViewController.swift; sourceTree = "<group>"; };
+		7FEE1F0122C99D10006B197E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7FEE1F0722CAF074006B197E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		80370C6E0EF55EEAA5870083 /* Pods-Look Roulette.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Look Roulette.release.xcconfig"; path = "Target Support Files/Pods-Look Roulette/Pods-Look Roulette.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,17 +69,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				680A757AB04431718E337BED /* Pods_Look_Roulette.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E5AC0C2E30E2B92C4355210 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				786BC1E96C556D2436FD6FF7 /* Pods_Look_Roulette.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		336570226F6B207FBC105524 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2705602E2871BDDBCF0BE564 /* Pods-Look Roulette.debug.xcconfig */,
+				80370C6E0EF55EEAA5870083 /* Pods-Look Roulette.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7FEE1EB522C84B62006B197E = {
 			isa = PBXGroup;
 			children = (
 				7FEE1EC022C84B62006B197E /* Look Roulette */,
 				7FEE1EBF22C84B62006B197E /* Products */,
+				336570226F6B207FBC105524 /* Pods */,
+				2E5AC0C2E30E2B92C4355210 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,13 +117,16 @@
 				7FEE1EF022C84BB2006B197E /* Model */,
 				7FEE1ED522C84B93006B197E /* Networking */,
 				7FEE1EC122C84B62006B197E /* AppDelegate.swift */,
-				7FEE1EC322C84B62006B197E /* FirstViewController.swift */,
+				7FEE1EC322C84B62006B197E /* HomeViewController.swift */,
 				7FEE1EC722C84B62006B197E /* Main.storyboard */,
 				7FEE1ECA22C84B63006B197E /* Assets.xcassets */,
 				7FEE1ECC22C84B63006B197E /* LaunchScreen.storyboard */,
 				7FEE1ECF22C84B63006B197E /* Info.plist */,
 				7FEE1EF922C851FF006B197E /* LooksTableViewController.swift */,
 				7FEE1EFD22C8E0B4006B197E /* LooksImageCell.swift */,
+				7FEE1EFF22C99840006B197E /* LookDetailsViewController.swift */,
+				7FEE1F0122C99D10006B197E /* Extensions.swift */,
+				7FEE1F0722CAF074006B197E /* ImagePicker.swift */,
 			);
 			path = "Look Roulette";
 			sourceTree = "<group>";
@@ -164,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FEE1ED222C84B63006B197E /* Build configuration list for PBXNativeTarget "Look Roulette" */;
 			buildPhases = (
+				1C08D85617FDD8ABE52F4677 /* [CP] Check Pods Manifest.lock */,
 				7FEE1EBA22C84B62006B197E /* Sources */,
 				7FEE1EBB22C84B62006B197E /* Frameworks */,
 				7FEE1EBC22C84B62006B197E /* Resources */,
+				92BFDD0DB281E05B36BF472B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,6 +258,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C08D85617FDD8ABE52F4677 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Look Roulette-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92BFDD0DB281E05B36BF472B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Look Roulette/Pods-Look Roulette-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Look Roulette/Pods-Look Roulette-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Look Roulette/Pods-Look Roulette-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7FEE1EBA22C84B62006B197E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -235,16 +312,19 @@
 				7FEE1EEA22C84B93006B197E /* EndPointType.swift in Sources */,
 				7FEE1EF422C84BB2006B197E /* YouTube.swift in Sources */,
 				7FEE1EF322C84BB2006B197E /* Bookmark.swift in Sources */,
+				7FEE1F0222C99D10006B197E /* Extensions.swift in Sources */,
 				7FEE1EE722C84B93006B197E /* URLParameterEncoder.swift in Sources */,
 				7FEE1EE922C84B93006B197E /* NetworkManager.swift in Sources */,
 				7FEE1EFA22C851FF006B197E /* LooksTableViewController.swift in Sources */,
 				7FEE1EE622C84B93006B197E /* ParameterEncoding.swift in Sources */,
 				7FEE1EEE22C84B93006B197E /* NetworkRouter.swift in Sources */,
+				7FEE1F0022C99840006B197E /* LookDetailsViewController.swift in Sources */,
 				7FEE1EEC22C84B93006B197E /* HTTPTask.swift in Sources */,
 				7FEE1EEF22C84B93006B197E /* Router.swift in Sources */,
 				7FEE1EC222C84B62006B197E /* AppDelegate.swift in Sources */,
+				7FEE1F0822CAF074006B197E /* ImagePicker.swift in Sources */,
 				7FEE1EEB22C84B93006B197E /* HTTPMethod.swift in Sources */,
-				7FEE1EC422C84B62006B197E /* FirstViewController.swift in Sources */,
+				7FEE1EC422C84B62006B197E /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +468,7 @@
 		};
 		7FEE1ED322C84B63006B197E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2705602E2871BDDBCF0BE564 /* Pods-Look Roulette.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -406,6 +487,7 @@
 		};
 		7FEE1ED422C84B63006B197E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80370C6E0EF55EEAA5870083 /* Pods-Look Roulette.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
