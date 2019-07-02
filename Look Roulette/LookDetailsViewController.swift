@@ -10,9 +10,15 @@ import UIKit
 import YoutubePlayerView
 import Alamofire.Swift
 
-class LookDetailsViewController: UIViewController {
+class LookDetailsViewController: UIViewController, LookModifiedDelegate {
+    
+    func userModifiedLook(modifiedLook: UIImage) {
+        _thumbnailImage.image = modifiedLook
+    }
     
     var items: Items!
+    
+    var modifiedLook: UIImage!
     
     @IBOutlet weak var _videoTitle: UILabel!
     @IBOutlet weak var _playerView: YoutubePlayerView!
@@ -63,11 +69,6 @@ class LookDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
         // set the default image
         getDefaultImage()
         
@@ -76,9 +77,16 @@ class LookDetailsViewController: UIViewController {
         _thumbnailImage.load(url: URL(string: items.snippet.thumbnails.high.url)!)
         
         // Thumbnail Tap
-        let longTapGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(modifyLook(longTapGestureRecognizer:)))
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(modifyLook(tapGestureRecognizer:)))
         _thumbnailImage.isUserInteractionEnabled = true
-        _thumbnailImage.addGestureRecognizer(longTapGestureRecognizer)
+        _thumbnailImage.addGestureRecognizer(tapGestureRecognizer)
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -93,6 +101,8 @@ class LookDetailsViewController: UIViewController {
             let modifyLookController = segue.destination as! ModifyLookViewController
             modifyLookController.items = self.items
             modifyLookController.currentImage = self._thumbnailImage.image
+            
+            modifyLookController.delegate = self
         default:
             preconditionFailure("Unexpected segue identifier.")
         }
@@ -108,7 +118,7 @@ class LookDetailsViewController: UIViewController {
         }
     }
     
-    @objc func modifyLook(longTapGestureRecognizer: UILongPressGestureRecognizer) {
+    @objc func modifyLook(tapGestureRecognizer: UIGestureRecognizer) {
         let modifyAlert = UIAlertController(title: nil, message: "Modify the current look for a better Transfer.", preferredStyle: .actionSheet)
         
         let modify = UIAlertAction(title: "Modify Look", style: .default) { (action: UIAlertAction) in

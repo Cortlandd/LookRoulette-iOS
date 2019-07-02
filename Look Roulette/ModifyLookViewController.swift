@@ -9,8 +9,14 @@
 import UIKit
 import YoutubePlayerView
 
+protocol LookModifiedDelegate: class {
+    func userModifiedLook(modifiedLook: UIImage)
+}
+
 class ModifyLookViewController: UIViewController {
 
+    weak var delegate: LookModifiedDelegate? = nil
+    
     var items: Items!
     
     var currentImage: UIImage!
@@ -22,14 +28,21 @@ class ModifyLookViewController: UIViewController {
     }
     
     @IBAction func closeModifyLook(_ sender: Any) {
-        self.dismiss(animated: true
-            , completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func saveModifiedLook(_ sender: Any) {
         
+        // If the user created a modified look save it to details page and exit, or just leave.
         if _modifiedLook.image != nil {
             // Pass image
+            delegate?.userModifiedLook(modifiedLook: _modifiedLook.image!)
+            
+            // Gotta be a better way of doing this
+            self.navigationController?.popViewController(animated: true)
+            self.dismiss(animated: true, completion: nil)
+        } else {
+            self.dismiss(animated: true, completion: nil)
         }
         
     }
