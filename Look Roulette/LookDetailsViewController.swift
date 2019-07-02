@@ -8,6 +8,7 @@
 
 import UIKit
 import YoutubePlayerView
+import Alamofire.Swift
 
 class LookDetailsViewController: UIViewController {
     
@@ -18,6 +19,46 @@ class LookDetailsViewController: UIViewController {
     @IBOutlet weak var _thumbnailImage: UIImageView!
     @IBOutlet weak var _defaultImage: UIImageView!
     @IBOutlet weak var _transferImage: UIImageView!
+    
+    @IBAction func transferImage(_ sender: Any) {
+        
+        let transferAlert = UIAlertController(title: nil, message: "Transferring Look...", preferredStyle: .alert)
+        transferAlert.view.tintColor = UIColor.black
+        let loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50)) as UIActivityIndicatorView
+        loadingIndicator.hidesWhenStopped = true
+        loadingIndicator.style = .gray
+        loadingIndicator.startAnimating()
+        transferAlert.view.addSubview(loadingIndicator)
+        present(transferAlert, animated: true, completion: nil)
+        
+        let nomakeupData = _defaultImage.image!.pngData()
+        let makeupData = _thumbnailImage.image!.pngData()
+        
+        let session = Alamofire.Session.default
+
+        session.upload(
+            multipartFormData: { multipartFormData in
+                multipartFormData.append(nomakeupData!, withName: "nomakeup_file", fileName: "nomakeup.png", mimeType: "image/png")
+                multipartFormData.append(makeupData!, withName: "makeup_file", fileName: "makeup.png", mimeType: "image/png")
+        }, usingThreshold: UInt64(0),
+           to: "https://lookroulette.herokuapp.com/api/v1/makeup_transfer").responseJSON { (response) in
+            
+            //debugPrint(response)
+            
+            switch response.result {
+            case .success(let value):
+                if let json = value as? [String: Any] {
+                    self._transferImage.load(url: URL(string: json["transferImage"] as! String)!)
+                    transferAlert.dismiss(animated: true, completion: nil)
+                }
+            case .failure:
+                break
+            }
+            
+        }
+        
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
