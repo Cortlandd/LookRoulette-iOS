@@ -33,12 +33,28 @@ class LookDetailsViewController: UIViewController {
         _videoTitle.text = items.snippet.title
         _playerView.loadWithVideoId(items.id.videoId)
         _thumbnailImage.load(url: URL(string: items.snippet.thumbnails.high.url)!)
+        
+        // Thumbnail Tap
+        let longTapGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(modifyLook(longTapGestureRecognizer:)))
+        _thumbnailImage.isUserInteractionEnabled = true
+        _thumbnailImage.addGestureRecognizer(longTapGestureRecognizer)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         
         // Need to dispose of everything for memory
     
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "ModifyLook":
+            let modifyLookController = segue.destination as! ModifyLookViewController
+            modifyLookController.items = self.items
+            modifyLookController.currentImage = self._thumbnailImage.image
+        default:
+            preconditionFailure("Unexpected segue identifier.")
+        }
     }
     
     func getDefaultImage() {
@@ -49,6 +65,26 @@ class LookDetailsViewController: UIViewController {
         } else {
             _defaultImage.image = #imageLiteral(resourceName: "pyramid-7")
         }
+    }
+    
+    @objc func modifyLook(longTapGestureRecognizer: UILongPressGestureRecognizer) {
+        let modifyAlert = UIAlertController(title: nil, message: "Modify the current look for a better Transfer.", preferredStyle: .actionSheet)
+        
+        let modify = UIAlertAction(title: "Modify Look", style: .default) { (action: UIAlertAction) in
+            self.performSegue(withIdentifier: "ModifyLook", sender: self)
+            
+        }
+        
+        let crop = UIAlertAction(title: "Crop Look", style: .default) { (action: UIAlertAction) in
+            
+        }
+        
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        modifyAlert.addAction(modify)
+        modifyAlert.addAction(crop)
+        modifyAlert.addAction(cancel)
+        self.present(modifyAlert, animated: true, completion: nil)
     }
 
     /*

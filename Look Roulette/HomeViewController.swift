@@ -19,22 +19,33 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.imagePicker = ImagePicker(presentationController: self, delegate: self)
         
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+        let longTapGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(imageLongTapped(longTapGestureRecognizer:)))
+        longTapGestureRecognizer.minimumPressDuration = 0.3
+        _defaultImage.isUserInteractionEnabled = true
+        
         if UserDefaults.standard.object(forKey: "DefaultImage") != nil {
             let imageData = UserDefaults.standard.object(forKey: "DefaultImage") as! NSData
             _defaultImage.image = UIImage(data: imageData as Data)
+            _defaultImage.addGestureRecognizer(tapGestureRecognizer)
+            _defaultImage.addGestureRecognizer(longTapGestureRecognizer)
         } else {
             // Set image to pyramid if no preferences
             _defaultImage.image = #imageLiteral(resourceName: "pyramid-7")
+            _defaultImage.addGestureRecognizer(longTapGestureRecognizer)
         }
         
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
-        _defaultImage.isUserInteractionEnabled = true
-        _defaultImage.addGestureRecognizer(tapGestureRecognizer)
         
     }
     
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
         let tappedImage = tapGestureRecognizer.view as! UIImageView
+        print("Tapped")
+        //self.imagePicker.present(from: tappedImage)
+    }
+    
+    @objc func imageLongTapped(longTapGestureRecognizer: UILongPressGestureRecognizer) {
+        let tappedImage = longTapGestureRecognizer.view as! UIImageView
         self.imagePicker.present(from: tappedImage)
     }
 
