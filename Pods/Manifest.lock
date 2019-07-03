@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (5.0.0-beta.6)
+  - CropViewController (2.5.0)
   - YoutubePlayerView (1.0.2)
 
 DEPENDENCIES:
-  - Alamofire (~> 5.0.0-beta.5)
+  - Alamofire (~> 5.0.0-beta.6)
+  - CropViewController
   - YoutubePlayerView
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - CropViewController
     - YoutubePlayerView
 
 SPEC CHECKSUMS:
   Alamofire: cd08a4402bd12cacd0c66f23fb12fec8d6b965e4
+  CropViewController: 6c962d6fb264cc5cb325b622d5029d50c6c43e72
   YoutubePlayerView: 980ab5f696e50006c27f858db501590a7d9d36a3
 
-PODFILE CHECKSUM: c6c2ee500e9a87a532c2f79901e925782741d9e8
+PODFILE CHECKSUM: 7dbbb962e10f0fc5129ca5d18c288ffcdde38e62
 
 COCOAPODS: 1.7.1

@@ -9,8 +9,10 @@
 import UIKit
 import YoutubePlayerView
 import Alamofire.Swift
+import CropViewController
 
 class LookDetailsViewController: UIViewController, LookModifiedDelegate {
+    
     
     func userModifiedLook(modifiedLook: UIImage) {
         _thumbnailImage.image = modifiedLook
@@ -127,6 +129,7 @@ class LookDetailsViewController: UIViewController, LookModifiedDelegate {
         }
         
         let crop = UIAlertAction(title: "Crop Look", style: .default) { (action: UIAlertAction) in
+            self.cropLook()
             
         }
         
@@ -137,15 +140,20 @@ class LookDetailsViewController: UIViewController, LookModifiedDelegate {
         modifyAlert.addAction(cancel)
         self.present(modifyAlert, animated: true, completion: nil)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func cropLook() {
+        let cropViewController = CropViewController(image: self._thumbnailImage.image!)
+        cropViewController.delegate = self
+        self.present(cropViewController, animated: true, completion: nil)
     }
-    */
+    
 
+}
+
+extension LookDetailsViewController: CropViewControllerDelegate {
+    
+    func cropViewController(_ cropViewController: CropViewController, didCropToImage image: UIImage, withRect cropRect: CGRect, angle: Int) {
+        self._thumbnailImage.image = image
+        dismiss(animated: true, completion: nil)
+    }
 }
