@@ -28,7 +28,6 @@ class FiltersViewController: UIViewController {
         insertFilter()
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
