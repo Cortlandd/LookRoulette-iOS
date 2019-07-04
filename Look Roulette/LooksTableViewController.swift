@@ -8,14 +8,28 @@
 
 import UIKit
 
-class LooksTableViewController: UITableViewController {
-    
-    @IBOutlet weak var _looksLoadingIndicator: UIActivityIndicatorView!
-    @IBOutlet var _noResultsView: UIView!
+class LooksTableViewController: UITableViewController, FiltersSavedDelegate {
     
     /* TODO's:
      Implement pull down refresh
      */
+    
+    func querySaved(query: String) {
+        if query == nil {
+            let alert = UIAlertController(title: "Message", message: "Your filters and search came up empty so we searched: Makeup Tutorials", preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(alertAction)
+            self.present(alert, animated: true, completion: nil)
+            searchVideo(query: baseSearchQuery)
+        } else {
+            // Clear all search results in place of new filters
+            searchResults.removeAll()
+            searchVideo(query: query)
+        }
+    }
+    
+    @IBOutlet weak var _looksLoadingIndicator: UIActivityIndicatorView!
+    @IBOutlet var _noResultsView: UIView!
     
     // YouTube API Key
     // Place this somewhere else
@@ -29,6 +43,8 @@ class LooksTableViewController: UITableViewController {
     
     var baseSearchQuery: String = "makeup tutorials"
     
+    let search = UserDefaults.standard.object(forKey: "FullSearchQuery")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,7 +54,12 @@ class LooksTableViewController: UITableViewController {
         
         searchResults = [Items]()
         
-        searchVideo()
+        if search != nil {
+            searchVideo(query: search as! String)
+        } else {
+            searchVideo(query: baseSearchQuery)
+        }
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -47,12 +68,12 @@ class LooksTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
-    func searchVideo() {
+    func searchVideo(query: String) {
         
         self._looksLoadingIndicator.isHidden = false
         
-        var search_params: Parameters = [
-            "q": "\(baseSearchQuery)",
+        let search_params: Parameters = [
+            "q": "\(query)",
             "part": "snippet",
             "key": API_SEARCH_KEY,
             // Get maximum amount of results to reduce api usage and quota maximizing
@@ -94,7 +115,8 @@ class LooksTableViewController: UITableViewController {
                 looksDetailViewController.items = items
             }
         case "LookFilters":
-            print("Hello")
+            let filtersViewController = segue.destination as! FiltersViewController
+            filtersViewController.delegate = self
         default:
             preconditionFailure("Unexpected segue identifier.")
         }
@@ -130,7 +152,7 @@ class LooksTableViewController: UITableViewController {
         
         if indexPath.row + 1 == searchResults.count {
             // TODO: Setup 1 second delay
-            searchVideo()
+            searchVideo(query: search as? String ?? baseSearchQuery)
             
         }
     }

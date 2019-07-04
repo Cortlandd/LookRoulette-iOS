@@ -32,7 +32,7 @@ class HomeViewController: UIViewController {
         } else {
             // Set image to pyramid if no preferences
             _defaultImage.image = #imageLiteral(resourceName: "pyramid-7")
-            _defaultImage.addGestureRecognizer(longTapGestureRecognizer)
+            _defaultImage.addGestureRecognizer(tapGestureRecognizer)
         }
         
         
@@ -40,13 +40,12 @@ class HomeViewController: UIViewController {
     
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
         let tappedImage = tapGestureRecognizer.view as! UIImageView
-        print("Tapped")
-        //self.imagePicker.present(from: tappedImage)
+        self.imagePicker.present(from: tappedImage)
     }
     
     @objc func imageLongTapped(longTapGestureRecognizer: UILongPressGestureRecognizer) {
-        let tappedImage = longTapGestureRecognizer.view as! UIImageView
-        self.imagePicker.present(from: tappedImage)
+        // TODO: hold to view image
+        //let tappedImage = longTapGestureRecognizer.view as! UIImageView
     }
 
 }

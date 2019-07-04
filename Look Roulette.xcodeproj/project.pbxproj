@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		680A757AB04431718E337BED /* Pods_Look_Roulette.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 786BC1E96C556D2436FD6FF7 /* Pods_Look_Roulette.framework */; };
+		7FE62B7822CDBA6900424A55 /* FilterDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE62B7722CDBA6900424A55 /* FilterDefaults.swift */; };
 		7FEE1EC222C84B62006B197E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE1EC122C84B62006B197E /* AppDelegate.swift */; };
 		7FEE1EC422C84B62006B197E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE1EC322C84B62006B197E /* HomeViewController.swift */; };
 		7FEE1EC922C84B62006B197E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FEE1EC722C84B62006B197E /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		2705602E2871BDDBCF0BE564 /* Pods-Look Roulette.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Look Roulette.debug.xcconfig"; path = "Target Support Files/Pods-Look Roulette/Pods-Look Roulette.debug.xcconfig"; sourceTree = "<group>"; };
 		786BC1E96C556D2436FD6FF7 /* Pods_Look_Roulette.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Look_Roulette.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FE62B7722CDBA6900424A55 /* FilterDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDefaults.swift; sourceTree = "<group>"; };
 		7FEE1EBE22C84B62006B197E /* Look Roulette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Look Roulette.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FEE1EC122C84B62006B197E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FEE1EC322C84B62006B197E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				7FEE1F0922CB0774006B197E /* ModifyLookViewController.swift */,
 				7FEE1F0D22CC1F1B006B197E /* FiltersViewController.swift */,
 				7FEE1F0F22CC40E9006B197E /* FilterCell.swift */,
+				7FE62B7722CDBA6900424A55 /* FilterDefaults.swift */,
 			);
 			path = "Look Roulette";
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				7FEE1EE822C84B93006B197E /* YouTubeEndPoint.swift in Sources */,
 				7FEE1F0A22CB0774006B197E /* ModifyLookViewController.swift in Sources */,
 				7FEE1EE522C84B93006B197E /* JSONParameterEncoder.swift in Sources */,
+				7FE62B7822CDBA6900424A55 /* FilterDefaults.swift in Sources */,
 				7FEE1EEA22C84B93006B197E /* EndPointType.swift in Sources */,
 				7FEE1EF422C84BB2006B197E /* YouTube.swift in Sources */,
 				7FEE1EF322C84BB2006B197E /* Bookmark.swift in Sources */,
