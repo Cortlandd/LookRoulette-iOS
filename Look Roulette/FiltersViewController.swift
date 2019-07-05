@@ -74,6 +74,9 @@ class FiltersViewController: UIViewController {
 
         _baseSearchText.addTarget(self, action: #selector(tappedBaseSearchText), for: .allEditingEvents)
         _addFilterText.addTarget(self, action: #selector(filterTextListener), for: .allEditingEvents)
+        
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 70
     }
     
 

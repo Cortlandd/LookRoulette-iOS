@@ -1,4 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-Look Roulette/Pods-Look Roulette-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/CropViewController/CropViewController.framework
+${BUILT_PRODUCTS_DIR}/GSImageViewerController/GSImageViewerController.framework
 ${BUILT_PRODUCTS_DIR}/YoutubePlayerView/YoutubePlayerView.framework

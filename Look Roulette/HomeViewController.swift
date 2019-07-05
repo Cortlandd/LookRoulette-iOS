@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GSImageViewerController
 
 class HomeViewController: UIViewController {
 
@@ -16,6 +17,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
         self.imagePicker = ImagePicker(presentationController: self, delegate: self)
         
@@ -32,20 +34,23 @@ class HomeViewController: UIViewController {
         } else {
             // Set image to pyramid if no preferences
             _defaultImage.image = #imageLiteral(resourceName: "pyramid-7")
-            _defaultImage.addGestureRecognizer(tapGestureRecognizer)
+            _defaultImage.addGestureRecognizer(longTapGestureRecognizer)
         }
-        
         
     }
     
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
-        let tappedImage = tapGestureRecognizer.view as! UIImageView
-        self.imagePicker.present(from: tappedImage)
+        if let tappedImage = tapGestureRecognizer.view as? UIImageView {
+            let imageInfo      = GSImageInfo(image: tappedImage.image!, imageMode: .aspectFit)
+            let transitionInfo = GSTransitionInfo(fromView: self.view)
+            let imageViewer    = GSImageViewerController(imageInfo: imageInfo, transitionInfo: transitionInfo)
+            present(imageViewer, animated: true, completion: nil)
+        }
     }
     
     @objc func imageLongTapped(longTapGestureRecognizer: UILongPressGestureRecognizer) {
-        // TODO: hold to view image
-        //let tappedImage = longTapGestureRecognizer.view as! UIImageView
+        let tappedImage = longTapGestureRecognizer.view as! UIImageView
+        self.imagePicker.present(from: tappedImage)
     }
 
 }

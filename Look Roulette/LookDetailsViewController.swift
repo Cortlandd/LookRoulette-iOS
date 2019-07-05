@@ -10,6 +10,7 @@ import UIKit
 import YoutubePlayerView
 import Alamofire.Swift
 import CropViewController
+import GSImageViewerController
 
 class LookDetailsViewController: UIViewController, LookModifiedDelegate {
     
@@ -22,7 +23,6 @@ class LookDetailsViewController: UIViewController, LookModifiedDelegate {
     
     var modifiedLook: UIImage!
     
-    @IBOutlet weak var _videoTitle: UILabel!
     @IBOutlet weak var _playerView: YoutubePlayerView!
     @IBOutlet weak var _thumbnailImage: UIImageView!
     @IBOutlet weak var _defaultImage: UIImageView!
@@ -51,8 +51,6 @@ class LookDetailsViewController: UIViewController, LookModifiedDelegate {
         }, usingThreshold: UInt64(0),
            to: "https://lookroulette.herokuapp.com/api/v1/makeup_transfer").responseJSON { (response) in
             
-            //debugPrint(response)
-            
             switch response.result {
             case .success(let value):
                 if let json = value as? [String: Any] {
@@ -60,11 +58,15 @@ class LookDetailsViewController: UIViewController, LookModifiedDelegate {
                     transferAlert.dismiss(animated: true, completion: nil)
                 }
             case .failure:
+                transferAlert.dismiss(animated: false, completion: nil)
+                let alertController = UIAlertController(title: "Transfer", message:
+                    "There was an error during Transfer. Check your Default Image or Look. If the error persists, contact support.", preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+                self.present(alertController, animated: true, completion: nil)
                 break
             }
             
         }
-        
         
     }
     
@@ -74,27 +76,25 @@ class LookDetailsViewController: UIViewController, LookModifiedDelegate {
         // set the default image
         getDefaultImage()
         
-        _videoTitle.text = items.snippet.title
         _playerView.loadWithVideoId(items.id.videoId)
         _thumbnailImage.load(url: URL(string: items.snippet.thumbnails.high.url)!)
         
         // Thumbnail Tap
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(modifyLook(tapGestureRecognizer:)))
-        _thumbnailImage.isUserInteractionEnabled = true
-        _thumbnailImage.addGestureRecognizer(tapGestureRecognizer)
+        let longTapGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(modifyLook(longTapGestureRecognizer:)))
+        _thumbnailImage.addGestureRecognizer(longTapGestureRecognizer)
         
+        _thumbnailImage.addGestureRecognizer(setImageTapGesture())
+        _defaultImage.addGestureRecognizer(setImageTapGesture())
+        _transferImage.addGestureRecognizer(setImageTapGesture())
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        
     }
     
     override func viewDidDisappear(_ animated: Bool) {
-        
         // Need to dispose of everything for memory
-    
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -120,13 +120,14 @@ class LookDetailsViewController: UIViewController, LookModifiedDelegate {
         }
     }
     
-    @objc func modifyLook(tapGestureRecognizer: UIGestureRecognizer) {
+    @objc func modifyLook(longTapGestureRecognizer: UILongPressGestureRecognizer) {
         let modifyAlert = UIAlertController(title: nil, message: "Modify the current look for a better Transfer.", preferredStyle: .actionSheet)
         
-        let modify = UIAlertAction(title: "Modify Look", style: .default) { (action: UIAlertAction) in
-            self.performSegue(withIdentifier: "ModifyLook", sender: self)
-            
-        }
+        // TODO: Remove until I can figure out capturing on device
+//        let modify = UIAlertAction(title: "Modify Look", style: .default) { (action: UIAlertAction) in
+//            self.performSegue(withIdentifier: "ModifyLook", sender: self)
+//
+//        }
         
         let crop = UIAlertAction(title: "Crop Look", style: .default) { (action: UIAlertAction) in
             self.cropLook()
@@ -135,7 +136,7 @@ class LookDetailsViewController: UIViewController, LookModifiedDelegate {
         
         let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         
-        modifyAlert.addAction(modify)
+        //modifyAlert.addAction(modify)
         modifyAlert.addAction(crop)
         modifyAlert.addAction(cancel)
         self.present(modifyAlert, animated: true, completion: nil)
@@ -145,6 +146,21 @@ class LookDetailsViewController: UIViewController, LookModifiedDelegate {
         let cropViewController = CropViewController(image: self._thumbnailImage.image!)
         cropViewController.delegate = self
         self.present(cropViewController, animated: true, completion: nil)
+    }
+    
+    func setImageTapGesture() -> UITapGestureRecognizer {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tappedImage(tapGesture:)))
+        return tapGesture
+    }
+    
+    @objc func tappedImage(tapGesture: UITapGestureRecognizer) {
+        if let image = tapGesture.view as? UIImageView {
+            let imgInfo = GSImageInfo(image: image.image!, imageMode: .aspectFit)
+            let imgTransitionInfo = GSTransitionInfo(fromView: self.view)
+            let imgViewer = GSImageViewerController(imageInfo: imgInfo, transitionInfo: imgTransitionInfo)
+            present(imgViewer, animated: true, completion: nil)
+            
+        }
     }
     
 

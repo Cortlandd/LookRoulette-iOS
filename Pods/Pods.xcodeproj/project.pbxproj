@@ -7,114 +7,132 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02D76E60FFC29902E3F202835089A09D /* ms.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C08FD47BD13615B2543869C9D956C107 /* ms.lproj */; };
-		04C65392A2F5D0C1F3CA991B76255B9F /* TOCropViewControllerTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CB1B9E14101AF182D2A3D557FB0ECA /* TOCropViewControllerTransitioning.m */; };
-		061C7BEBC6DF46D21A61CE4052097C7F /* vi.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A7C894753FE21A0CB8D69FAEEF21C33C /* vi.lproj */; };
-		0836AC76B74CFF45E2C3AC805642F825 /* id.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 3E074143937B18F693442AEE4A9B082D /* id.lproj */; };
+		02D76E60FFC29902E3F202835089A09D /* ms.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4DED06A0292B4DF3FFF1BAE143002E4F /* ms.lproj */; };
+		04C65392A2F5D0C1F3CA991B76255B9F /* TOCropViewControllerTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4186D447C5B29C2354CDEA732F632F /* TOCropViewControllerTransitioning.m */; };
+		061C7BEBC6DF46D21A61CE4052097C7F /* vi.lproj in Resources */ = {isa = PBXBuildFile; fileRef = BE07B9D653069FC47205A9FF5479E6EA /* vi.lproj */; };
+		0836AC76B74CFF45E2C3AC805642F825 /* id.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C0E89259F806D1D875C515F68580F78A /* id.lproj */; };
 		09A02F30136165244AC033752BB992EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
-		0DA850EA05B09D0DC2DC5BAC037F49BE /* da-DK.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2E8CB96F0927B55ACB2932BBCA4185DC /* da-DK.lproj */; };
-		103E14BE0A448051128F26488AC37054 /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F7D14774AAE40C2550F56B08ACB81 /* MultipartUpload.swift */; };
-		10AD9099009DB912BC71264BD84BE8BD /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09E29ACA22560EAE7C479C6EDC9E287 /* SessionDelegate.swift */; };
-		10DF7944909493A6B3EB0704FCB0F583 /* ro.lproj in Resources */ = {isa = PBXBuildFile; fileRef = F097CB0BB1702C97C7047939CF201997 /* ro.lproj */; };
-		15E46D1A0F380BEA4A9806E12227C197 /* TOCropOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 62FB5A603F4B4FDFC44B34E773990D10 /* TOCropOverlayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		17E56E161BA6AAA58DF4B5BEA14CAA18 /* CropViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B21A58C66682157CD142A3F95A9CBC5 /* CropViewController-dummy.m */; };
-		2A0FE63E3BA6F208C8E53C35EBA48BFE /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C6A07FBD597C3560285DAC55A6395E /* Session.swift */; };
-		2BA10D06D703F76BE6D9A341EE7BC490 /* Pods-Look Roulette-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9830A6C56902BB4685F4F77BBD19758C /* Pods-Look Roulette-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FBA70525F8E00EA6822BD330924A810 /* TOCropScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 186E8FCAC17FD30222968B0FCC3232B4 /* TOCropScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33D052150B0AEB2C64301089CE4196E0 /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C00B869B8D310E763E147AEE5DFA4B1B /* ja.lproj */; };
-		372E22414B4A6428AF1825A2A610209E /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E82C5844451CACF1F1A83CB661868A /* ServerTrustEvaluation.swift */; };
-		3F02E883E4BF40FC0E8BBDACED9E92DA /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6070580B095DCA37FC90BE099C42543F /* Request.swift */; };
-		454926F5D192A4C4CC6577FACC1239C9 /* hu.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A7F010D0DD3AE1463FE4309501E2C05B /* hu.lproj */; };
-		45F517D526D1E0848C1A237A14436926 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20597E75E30692F0BBD9B543125C199 /* ParameterEncoding.swift */; };
-		5111BDB63EAFF6A39C99E562367A5DED /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87CDC70B49BFBB1DC9CF608EB421D89 /* Response.swift */; };
-		53351B231365B0A0D4F83A09D7FE1831 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C64060E7BF81D4549BB23777588979 /* EventMonitor.swift */; };
+		0DA850EA05B09D0DC2DC5BAC037F49BE /* da-DK.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1DAD9EE65FBBE71C65AFEC78133F3E1D /* da-DK.lproj */; };
+		103E14BE0A448051128F26488AC37054 /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C749B89DD8DEB8B615A18637037F36A /* MultipartUpload.swift */; };
+		10AD9099009DB912BC71264BD84BE8BD /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232072F8383F3D4530ACE3D3F27F9393 /* SessionDelegate.swift */; };
+		10DF7944909493A6B3EB0704FCB0F583 /* ro.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A1209C092C992CEE007C6891454C8995 /* ro.lproj */; };
+		15E46D1A0F380BEA4A9806E12227C197 /* TOCropOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B66211414CC562125C4D6086C6B27DA /* TOCropOverlayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17E56E161BA6AAA58DF4B5BEA14CAA18 /* CropViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B42BF78E46E1FC045B838B14CFC6281B /* CropViewController-dummy.m */; };
+		2A0FE63E3BA6F208C8E53C35EBA48BFE /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0D0F71439653C44D661D71D28CF0F8 /* Session.swift */; };
+		2FBA70525F8E00EA6822BD330924A810 /* TOCropScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 12283FF1FA9E73193E59B1E118252996 /* TOCropScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33D052150B0AEB2C64301089CE4196E0 /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D9B54F961174B2D39049C1159D37EC5A /* ja.lproj */; };
+		372E22414B4A6428AF1825A2A610209E /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62E3337B962C3F41D546B53E6333397 /* ServerTrustEvaluation.swift */; };
+		3F02E883E4BF40FC0E8BBDACED9E92DA /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2C85BCBE5FEE73BD7F2074E32A0CA /* Request.swift */; };
+		454926F5D192A4C4CC6577FACC1239C9 /* hu.lproj in Resources */ = {isa = PBXBuildFile; fileRef = F26BF67AED46D374F8D6C065F49E1191 /* hu.lproj */; };
+		45F517D526D1E0848C1A237A14436926 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0E79E6DFC93C13762EC62457CF3588 /* ParameterEncoding.swift */; };
+		485D1B238DF108C30128132D09C8EDCC /* GSImageViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897333A6D4AE0B0C29235A3F401240AB /* GSImageViewerController.swift */; };
+		4EDB8CEAB5BEAAD551181FC0A405279A /* GSImageViewerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E50BD7B4DA0DE4F7D0C77FAD2CF4250 /* GSImageViewerController-dummy.m */; };
+		5014935B95F5CFE2BA019D6D1FD08B77 /* Pods-Look Roulette-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2C1A9EFD8917C4E045C81ACD3199C /* Pods-Look Roulette-dummy.m */; };
+		5111BDB63EAFF6A39C99E562367A5DED /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249ACEEE28E7D561D49A56E0FE14FB8C /* Response.swift */; };
+		53351B231365B0A0D4F83A09D7FE1831 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269FB21AA09589BEB19EB3D812BA1CCA /* EventMonitor.swift */; };
 		541DF2678503DEA907C2AECEC53DDAD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
-		57BBE5612FE0CD35B7BDA58B53D7C10F /* TOCropView.h in Headers */ = {isa = PBXBuildFile; fileRef = BDFA75329F2B54450E935BEF7915C08D /* TOCropView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5816260F6F88F07E3CC657CE33FBE9E6 /* fa-IR.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C47DA8CA6B02C74ABCAA4F9F802EA205 /* fa-IR.lproj */; };
-		590B19E9B6B1382B533528E3F3467605 /* AFResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCD31BC25394089002B1DFE6E75D5B4 /* AFResult.swift */; };
-		5AA5A0659101E92642765CA34BB820E8 /* TOActivityCroppedImageProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = F481D91117E40CD84AA4A01CCD4AC446 /* TOActivityCroppedImageProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B8F16CE35760C92CF531A8C8979BD03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
-		614C63E7ADBD228F66735FB9E94A3D3A /* TOCropViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2947BF46B194D872634B522B6FF5CF7D /* TOCropViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62B8C8D3C07BD11A8E2B4BA344C5A3D5 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 966A09265189E7F52B6F2BBA07DB9EAC /* zh-Hans.lproj */; };
-		62D05BDA9FB7384CB7828A387D5C0091 /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB2BEA193393A128AA194FE783787B1 /* URLRequest+Alamofire.swift */; };
-		62ED7CF4B5D4B27B781607F62928345A /* ko.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 3CB9720A93D41332EF183D2DA2F9E297 /* ko.lproj */; };
-		654358354D5EFC9E0E7BD3E5AF12D4A1 /* TOCropViewConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = F0123D92ADACEF8775FE322E79D45996 /* TOCropViewConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		686A84BFBB8A66E83C0B964B0C675FDE /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2DC865D8ED2740FE45EB00F7D82DD693 /* es.lproj */; };
-		6968E3B157A8B96E45BF959DE09A6983 /* TOCropScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24BF603A2194F8CF1782A8C34ADCA0AA /* TOCropScrollView.m */; };
-		6D0768F9F257700CBFA082631D0B03DA /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24B5D2D6489C654686F39EE19C0F735 /* RedirectHandler.swift */; };
-		6D0D07BBC7801DFC07AAD0B42A6152B6 /* CropViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC2A44D5BAAA0DEBD6E8A1D9D713B8E /* CropViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6F2C6B3A8651A99A8AA92D6E3B16647E /* TOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABA12BAAD125BC25A2B34CAF4CB7B8D /* TOCroppedImageAttributes.m */; };
-		7285201199EC88A1150FB7F45F9DCE8C /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A718C77FE90E9601B13A3969642DBC /* Notifications.swift */; };
-		7BE52F3EA911E599279DFD3B5A8CB752 /* UIImage+CropRotate.h in Headers */ = {isa = PBXBuildFile; fileRef = 10ABBECAC096DB6BDFC0DB65FBB41111 /* UIImage+CropRotate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7C40E336DD14EA309AF3604372C04ECA /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BDDC39540045D3AC100B050EDA733C /* HTTPMethod.swift */; };
-		7C54A64342359E513F7238B8D832A91A /* TOCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 002FE1B544123774A74CFD2A4E2AAFFC /* TOCropView.m */; };
+		57BBE5612FE0CD35B7BDA58B53D7C10F /* TOCropView.h in Headers */ = {isa = PBXBuildFile; fileRef = 97E3CB1FC54130B5B3EA5309CB0A12BD /* TOCropView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5816260F6F88F07E3CC657CE33FBE9E6 /* fa-IR.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2E175C3B2D926EF9B358A82D41B988C9 /* fa-IR.lproj */; };
+		590B19E9B6B1382B533528E3F3467605 /* AFResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194D7907AD3A71A15F98EE51A9A8FAC7 /* AFResult.swift */; };
+		5AA5A0659101E92642765CA34BB820E8 /* TOActivityCroppedImageProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CCF2FC733D8EA8032688A12129A1AE6 /* TOActivityCroppedImageProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		614C63E7ADBD228F66735FB9E94A3D3A /* TOCropViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C1C76DC9612CA462CC9F31863D355C5 /* TOCropViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61FBB3E153AC24156C704107C7253AD0 /* Pods-Look Roulette-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9830A6C56902BB4685F4F77BBD19758C /* Pods-Look Roulette-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62B8C8D3C07BD11A8E2B4BA344C5A3D5 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 93E185E79684998DA1791162F3D13F9C /* zh-Hans.lproj */; };
+		62D05BDA9FB7384CB7828A387D5C0091 /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA416371BEFF593A4B5B6E8F8D080130 /* URLRequest+Alamofire.swift */; };
+		62ED7CF4B5D4B27B781607F62928345A /* ko.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 6F9331A5D5C0AA0893C4346C84B998A8 /* ko.lproj */; };
+		646D952FFD1EE79CC838564AC3491365 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		654358354D5EFC9E0E7BD3E5AF12D4A1 /* TOCropViewConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = C1A4A2562923A7FF9615C4B653080A01 /* TOCropViewConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		686A84BFBB8A66E83C0B964B0C675FDE /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 3D424213BBB0CE09D4E32425925D2EA6 /* es.lproj */; };
+		6968E3B157A8B96E45BF959DE09A6983 /* TOCropScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 812CB48C60521942D5F51B6B9BA2504A /* TOCropScrollView.m */; };
+		6BA9CC6D96D72F4E3C889314F04D30A1 /* GSImageViewerController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AAA64439CD73A4EC7961F7212499635 /* GSImageViewerController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D0768F9F257700CBFA082631D0B03DA /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3240F3336B8FB933963E19C75154903B /* RedirectHandler.swift */; };
+		6D0D07BBC7801DFC07AAD0B42A6152B6 /* CropViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E258F9EB369F9919F717A63AB88B0FD4 /* CropViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F2C6B3A8651A99A8AA92D6E3B16647E /* TOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F1AD7CA68FCAB818D781710467CE23 /* TOCroppedImageAttributes.m */; };
+		7285201199EC88A1150FB7F45F9DCE8C /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F65455C724BD7559F3BAC3CD45E9B9 /* Notifications.swift */; };
+		7BE52F3EA911E599279DFD3B5A8CB752 /* UIImage+CropRotate.h in Headers */ = {isa = PBXBuildFile; fileRef = 76AD1487BA986E503C92DC282D6D144B /* UIImage+CropRotate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C40E336DD14EA309AF3604372C04ECA /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8718A0713713E35D78E46B28FE15C6B2 /* HTTPMethod.swift */; };
+		7C54A64342359E513F7238B8D832A91A /* TOCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = B952F250D0340F1940BEFBED4E676005 /* TOCropView.m */; };
 		7D7657AFC2126AE0FE594C71B95C342D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
 		81D8FF1632989BDDBEA6CEABAC7F6446 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B079F294DA5D9A879E6D53A91F51A1E /* CFNetwork.framework */; };
-		83BFC3921BA33762C8C074FC109FD36A /* nl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5A183542C439CFF72AC48030395CEB51 /* nl.lproj */; };
-		8DEBD3BD5CA5B21C4BC84F45120C8E12 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D58C55D878791CC85737AC69B3E363 /* MultipartFormData.swift */; };
-		8E0787877AE4C1F719BDDE1707919232 /* TOCropToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = A626BB2F392C1F05591966221721B9A2 /* TOCropToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F732BD60579863835DCB15EC38FBD59 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB5D2DC472F565CCCD89D51AFF0AE07 /* RequestInterceptor.swift */; };
-		90307C5004A4F008BB29B8F56DEA5FB0 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2147E88B0F5A698A8190D0FF0EFF4243 /* HTTPHeaders.swift */; };
-		91787DC69E296D4B81C9C0A4103EE7B1 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 8AEF182CF86F429A8D5FF59E5EF34408 /* Base.lproj */; };
-		91CFA7E097CF6384817EEB98C880017C /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2944A82E1F3EAEA4B817577A7347CE2 /* DispatchQueue+Alamofire.swift */; };
-		9B9307072EE6C5CAD2529F02D69124FC /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4595B8FE9C5AD02DC57860D4ABEF3D8B /* Alamofire-dummy.m */; };
-		A27E84C7E45E5C7DCCA67B93D6F65CC9 /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 8BD8492E0FB9663756C9AF864CE7EC05 /* it.lproj */; };
-		A5ED76286FA7A777267DB16ECC7225C4 /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82851B6BD177A95A914BC2DCBC099E /* CachedResponseHandler.swift */; };
-		A78EFA9EB851E8F1219AB7510BD88E27 /* CropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482DDC8E221A1D8B1E81E720531D472 /* CropViewController.swift */; };
-		ACC1E1D680201B5738166B945EBED237 /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D1A27BFEA3FB43F63EFB7D54DE254CF6 /* ru.lproj */; };
-		AD464778FC34A5B6C3906F03E736686D /* tr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1CC92E7C3B2AE55E1294E26BA160A34F /* tr.lproj */; };
-		ADCB0F7146DB186998F5E9127819B721 /* Pods-Look Roulette-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2C1A9EFD8917C4E045C81ACD3199C /* Pods-Look Roulette-dummy.m */; };
-		B1A3295EE9D4EFC836ADB6A5F99C76EC /* zh-Hant.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 6D9EAC893054215804D9FC72ED587A2F /* zh-Hant.lproj */; };
-		B28B997C1CDBF09213DC1F98202D2F20 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394722AC2A80A5E860AD36B263813370 /* ParameterEncoder.swift */; };
-		B6DE5F4A41D1409A68378F6E226BC58D /* TOCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F6635D5567A36514595C16608D7A60 /* TOCropOverlayView.m */; };
-		BD1F6AA8C313E9BDCE9BA919642911B7 /* TOCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F07E95A9BC4E8D94FA6DF9BF297319 /* TOCropViewController.m */; };
-		BDA0A5A004A8BF5FD3B8C5349D269485 /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5671F4B2FD2FC5D3DF82CAFDA84212A /* AlamofireExtended.swift */; };
-		C151F1B3F8274837EFF34C8D2E9D5BB3 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 01B5FF0EDA8BB67558C8A38FDDC138FF /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2818DBE2B066DB95BE8990E441E1B68 /* CropViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C0A4CD527362CC6BD25425ED56A3BB /* CropViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C293ACAE980C458B708074A7058FD1C5 /* YoutubePlayerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E45B1E89754917AC4B712C9972A3AF8B /* YoutubePlayerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2DC3C3738C75E9C59AB162D99A8A913 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2DF8FE7CC64CBA1D0DDDC898825D13 /* URLConvertible+URLRequestConvertible.swift */; };
-		C51C0647C15BAF95877FDEBA33CBFDDE /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEC656BFA7B53A92AB74A7BE7E3D9D9 /* URLSessionConfiguration+Alamofire.swift */; };
-		CBC7457CE91CA7C0D2086CD1EAB51AFB /* TOActivityCroppedImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = E49BAA34AA95B63979FE6987798EE2C6 /* TOActivityCroppedImageProvider.m */; };
-		D0B3C93B7F704A06A640504714E8ECDA /* pl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9D826342EC8250DC9907FF9EB0CDEF03 /* pl.lproj */; };
-		D149339DB9EBDE1C0F23A7F83DAF9894 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347D37AE01F9D8C955AC45DA1D286752 /* Alamofire.swift */; };
-		D1EB7AD37D5A2CC7FFFD5F74CEB8060B /* ar.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5095E2135C5AFFB1094FD4DE94BA89D1 /* ar.lproj */; };
-		D2B75E8983D16379C1AC5F24676BE68B /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 884DB30445B44CCBF923BAFFACD97854 /* fr.lproj */; };
-		D5A2A863255CC4F29D27C1187F8C4664 /* UIImage+CropRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33340F4C49630C078A9F1F8035B73A8C /* UIImage+CropRotate.m */; };
-		D5DC6A369E223CC3F97025219609B7AE /* fa.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5781E2E1E4D9B735C009D303DA726374 /* fa.lproj */; };
-		D5FB0E47E1954F22CA3D2285EB712141 /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9765E9ACFC2D5208D10A0302E71E1AD6 /* de.lproj */; };
-		D8C09397782C46448E79590796593B20 /* pt.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 6400870D4FB978B545D6AD0E8901EC76 /* pt.lproj */; };
-		D95ECC0760927C46B8C9914119FCBDAE /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC7CB03DCA55C41B56B7DF2BBB41534 /* RetryPolicy.swift */; };
-		DAE41630F90F5328B3FB538F39F48B1D /* YoutubePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E615C4CC667DE00412BE6A8192B224 /* YoutubePlayerView.swift */; };
-		DB140C86BFE46687188F4700EF45F86D /* TOCroppedImageAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8A66F23DB130AE4198A530264AAFFA /* TOCroppedImageAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB8350870E7529D80568099F9E3B40FF /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3FE64762B0D09EF8B002598A376A4A /* Validation.swift */; };
-		DE3C7DDF555E83D83D7F43D9436BE0BB /* YoutubePlayerExtras.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD6FF85E947E2BE224EDA310AFAA6AB /* YoutubePlayerExtras.swift */; };
-		DED09E2A9E07E734B34AFC5E0A6CAE21 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8520138E2E73BB2D09E441690C8384B2 /* OperationQueue+Alamofire.swift */; };
-		E9EDE4E60346460BCD507A7762EC2F6E /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F6EEF3CF5FB29EFBEED359AFB96C3F /* ResponseSerialization.swift */; };
-		EA3928C429BE6E9AA0557E9DD546560E /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355ADAD7ADBAEC6221B51BC125463B24 /* NetworkReachabilityManager.swift */; };
-		EA98B36B85C617143B5A49B30BDFCD5B /* TOCropViewControllerTransitioning.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B11DDF53DB060D7E2ECC9ADB2EB49C7 /* TOCropViewControllerTransitioning.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83BFC3921BA33762C8C074FC109FD36A /* nl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4F52D9F2CEAEDA20EE14B53E9B5FA5C5 /* nl.lproj */; };
+		8DEBD3BD5CA5B21C4BC84F45120C8E12 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAD5DA5A943C66ED8E2C9AA6B12F8A7 /* MultipartFormData.swift */; };
+		8E0787877AE4C1F719BDDE1707919232 /* TOCropToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C6C63DD26D90C3784E24BCB8C48F71 /* TOCropToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F732BD60579863835DCB15EC38FBD59 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250DC39DDFDBF76F40410FB0202FF225 /* RequestInterceptor.swift */; };
+		90307C5004A4F008BB29B8F56DEA5FB0 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C5941D1CEC8BA2F92AD8BAC69B2DD9 /* HTTPHeaders.swift */; };
+		91787DC69E296D4B81C9C0A4103EE7B1 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 30818C54EEFE52D1E8BC8AA7EA3ADD1E /* Base.lproj */; };
+		91CFA7E097CF6384817EEB98C880017C /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB67F9199783E6B10E78151FD9B45F87 /* DispatchQueue+Alamofire.swift */; };
+		9B9307072EE6C5CAD2529F02D69124FC /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B900AB9D8717FA7D00D36D39B369507 /* Alamofire-dummy.m */; };
+		A27E84C7E45E5C7DCCA67B93D6F65CC9 /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 43B383EADF5F6E03672E27E5F205CB47 /* it.lproj */; };
+		A5ED76286FA7A777267DB16ECC7225C4 /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4D32C10C15CAD42AC0554B92DC373D /* CachedResponseHandler.swift */; };
+		A78EFA9EB851E8F1219AB7510BD88E27 /* CropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3A07DC7AC754956697FD036E38F61F /* CropViewController.swift */; };
+		ACC1E1D680201B5738166B945EBED237 /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 826B3717AD23A8CB9DA5C5704373C503 /* ru.lproj */; };
+		AD464778FC34A5B6C3906F03E736686D /* tr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 0DB3818F4FE99BA640DC7E91DB98B7C8 /* tr.lproj */; };
+		B1A3295EE9D4EFC836ADB6A5F99C76EC /* zh-Hant.lproj in Resources */ = {isa = PBXBuildFile; fileRef = B656D79FE7DA12D00F68DBE7EF0B9D3F /* zh-Hant.lproj */; };
+		B1BFEDA3A29284B4AB5D2E0732877CE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		B28B997C1CDBF09213DC1F98202D2F20 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4500AF6D7EDDA48FCF5B26AAD987AA /* ParameterEncoder.swift */; };
+		B6DE5F4A41D1409A68378F6E226BC58D /* TOCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BE488C5722C45A3A98D38C8A900108 /* TOCropOverlayView.m */; };
+		BD1F6AA8C313E9BDCE9BA919642911B7 /* TOCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 909DB3E6016EAC3849A709434786CC05 /* TOCropViewController.m */; };
+		BDA0A5A004A8BF5FD3B8C5349D269485 /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = C791E75A194455769FC57A4167A6F8B0 /* AlamofireExtended.swift */; };
+		C151F1B3F8274837EFF34C8D2E9D5BB3 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09F94A2A72775D8CF930EA8187E9FE13 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2818DBE2B066DB95BE8990E441E1B68 /* CropViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 46D66FDCF420F304E13F642FA2D44C64 /* CropViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C293ACAE980C458B708074A7058FD1C5 /* YoutubePlayerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A97E8F10716A929B9CFCC2AA5D7E4DD /* YoutubePlayerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2DC3C3738C75E9C59AB162D99A8A913 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED841EC43F2B8966B8D866DA1D543D2B /* URLConvertible+URLRequestConvertible.swift */; };
+		C51C0647C15BAF95877FDEBA33CBFDDE /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4620A6698526BCD77BD399759C4AECA /* URLSessionConfiguration+Alamofire.swift */; };
+		CBC7457CE91CA7C0D2086CD1EAB51AFB /* TOActivityCroppedImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C76ED6BE8E1696299CF440101BE5D1 /* TOActivityCroppedImageProvider.m */; };
+		D0B3C93B7F704A06A640504714E8ECDA /* pl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = CAC497020AE05F43D0EE94D016FA0F69 /* pl.lproj */; };
+		D149339DB9EBDE1C0F23A7F83DAF9894 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB55237B121EAB6ECE0A773AD2C6DB2F /* Alamofire.swift */; };
+		D1EB7AD37D5A2CC7FFFD5F74CEB8060B /* ar.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5B25926F6C0C09CAF22ADE2472844803 /* ar.lproj */; };
+		D2B75E8983D16379C1AC5F24676BE68B /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = FB419DEBB93FBADAFF43CE57291271C6 /* fr.lproj */; };
+		D5A2A863255CC4F29D27C1187F8C4664 /* UIImage+CropRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7951DAB693A758AE1668DB44F41B0D /* UIImage+CropRotate.m */; };
+		D5DC6A369E223CC3F97025219609B7AE /* fa.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E7F4E6C75BA797DD4D6D4D745C45CF53 /* fa.lproj */; };
+		D5FB0E47E1954F22CA3D2285EB712141 /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 212811048424C6BA3DD34EFB055F4064 /* de.lproj */; };
+		D8C09397782C46448E79590796593B20 /* pt.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7639C8D1505C6167966D3699C2DFAB02 /* pt.lproj */; };
+		D95ECC0760927C46B8C9914119FCBDAE /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C4C09FAB8566542D8C7EFFC154EC88 /* RetryPolicy.swift */; };
+		DAE41630F90F5328B3FB538F39F48B1D /* YoutubePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D048E1892AE5344B837AC7E10E2F3E5 /* YoutubePlayerView.swift */; };
+		DB140C86BFE46687188F4700EF45F86D /* TOCroppedImageAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 98FF02C881C320645938A30809B1DEEA /* TOCroppedImageAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB8350870E7529D80568099F9E3B40FF /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2032D328CA7B5A19FB9E511EAF38B9 /* Validation.swift */; };
+		DE3C7DDF555E83D83D7F43D9436BE0BB /* YoutubePlayerExtras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8CBACEA2D59DF08F8B8CFE72B59028 /* YoutubePlayerExtras.swift */; };
+		DED09E2A9E07E734B34AFC5E0A6CAE21 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21E40FE6A56168758F7B012BA4E5BBB /* OperationQueue+Alamofire.swift */; };
+		E9EDE4E60346460BCD507A7762EC2F6E /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4CF68A801E805F2D3FA70DB94B0B91 /* ResponseSerialization.swift */; };
+		EA3928C429BE6E9AA0557E9DD546560E /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3AA076F84F99E0378CBD7D3BFB198E /* NetworkReachabilityManager.swift */; };
+		EA98B36B85C617143B5A49B30BDFCD5B /* TOCropViewControllerTransitioning.h in Headers */ = {isa = PBXBuildFile; fileRef = C23DB6BBD9067E5D4C1864D7C7087970 /* TOCropViewControllerTransitioning.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEFEF938C88CB3140DF857AF7C5BAA87 /* TOCropViewControllerBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 97A93DCEF2B1499B1F84D43333829DC7 /* TOCropViewControllerBundle.bundle */; };
-		EFFCC3756E930C10F2569F84FDD8BDE0 /* YoutubePlayerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1269E116B868377C023870EA0039A24C /* YoutubePlayerView-dummy.m */; };
-		F0200A613D234DBD9C10C83B26FE6129 /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2D1AE300CE7AD261F790A629EA8CA9 /* RequestTaskMap.swift */; };
-		F5398208B4DA1F8E0B209885827DAF2F /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D65F28A883765B78BB1A5A71A608CF0 /* AFError.swift */; };
-		F62F3A1BB3ECAD241B0AC821F4E64553 /* Protector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619A251AB5CAC19C68055D5DE0D6725A /* Protector.swift */; };
-		F89F68A680404303BBBAA2CBAB0DC781 /* TOCropToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D9685890209B35FF811D23D1CFC46C /* TOCropToolbar.m */; };
-		FB134E8BADA4D4521709E3034AAFA909 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 19C65540E97050FBBECC01D2287237BF /* en.lproj */; };
+		EFFCC3756E930C10F2569F84FDD8BDE0 /* YoutubePlayerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7590DD0A1DB337FE19653F44FBE43A2A /* YoutubePlayerView-dummy.m */; };
+		F0200A613D234DBD9C10C83B26FE6129 /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59D70C4905D36CF5B97CFCD903DF4E8 /* RequestTaskMap.swift */; };
+		F5398208B4DA1F8E0B209885827DAF2F /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F5B5CD5B8A90D7E91F711AC081AAFA /* AFError.swift */; };
+		F62F3A1BB3ECAD241B0AC821F4E64553 /* Protector.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF9AA3EC19B921AF822E4AA12FB44B8 /* Protector.swift */; };
+		F89F68A680404303BBBAA2CBAB0DC781 /* TOCropToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = F53DC79319ACFEB5D21BEB71B2025ECB /* TOCropToolbar.m */; };
+		FB134E8BADA4D4521709E3034AAFA909 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 82817B6FF918DA6C43DF444A0D233A52 /* en.lproj */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9752FE844D8BC15CFD3852F334020168 /* PBXContainerItemProxy */ = {
+		409C0EA06EEBA43C616393EE0169E713 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 11A6C3DFEE59C64FAB6952F7BC187505;
 			remoteInfo = YoutubePlayerView;
 		};
-		C654443A0E40E646C5C6DDE97BC614F8 /* PBXContainerItemProxy */ = {
+		55AF7F364A8ED8C242F7AE974A56F2D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D2C69BFD11A70F63CA31B033243D232;
+			remoteInfo = GSImageViewerController;
+		};
+		669CFF48F8BE0D5E5AA96F1DB98BD489 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CC81A5995F9CEB2971CBA61ACA13FCA3;
 			remoteInfo = CropViewController;
+		};
+		BA703B90EEA4B252AED908FB47608642 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
 		};
 		D88E77966AE52F35E4B0CA1DB5D0361C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -123,130 +141,131 @@
 			remoteGlobalIDString = BB4EEF23ECB2BAF774CE8EFA5AF90C40;
 			remoteInfo = "CropViewController-TOCropViewControllerBundle";
 		};
-		FAACDA554BFC8467FBF04D7CAF8F56BD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
-			remoteInfo = Alamofire;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		002FE1B544123774A74CFD2A4E2AAFFC /* TOCropView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropView.m; path = "Objective-C/TOCropViewController/Views/TOCropView.m"; sourceTree = "<group>"; };
-		01B5FF0EDA8BB67558C8A38FDDC138FF /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		02D9685890209B35FF811D23D1CFC46C /* TOCropToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropToolbar.m; path = "Objective-C/TOCropViewController/Views/TOCropToolbar.m"; sourceTree = "<group>"; };
-		0482DDC8E221A1D8B1E81E720531D472 /* CropViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CropViewController.swift; path = Swift/CropViewController/CropViewController.swift; sourceTree = "<group>"; };
-		06F07E95A9BC4E8D94FA6DF9BF297319 /* TOCropViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropViewController.m; path = "Objective-C/TOCropViewController/TOCropViewController.m"; sourceTree = "<group>"; };
-		09A718C77FE90E9601B13A3969642DBC /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		0D7F7D14774AAE40C2550F56B08ACB81 /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
-		0E353419791F8D9C1531FD8EF3D16A5B /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
-		10ABBECAC096DB6BDFC0DB65FBB41111 /* UIImage+CropRotate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+CropRotate.h"; path = "Objective-C/TOCropViewController/Categories/UIImage+CropRotate.h"; sourceTree = "<group>"; };
-		1269E116B868377C023870EA0039A24C /* YoutubePlayerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YoutubePlayerView-dummy.m"; sourceTree = "<group>"; };
+		09F94A2A72775D8CF930EA8187E9FE13 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		0B0D0F71439653C44D661D71D28CF0F8 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
+		0C749B89DD8DEB8B615A18637037F36A /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
+		0DB3818F4FE99BA640DC7E91DB98B7C8 /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = tr.lproj; path = "Objective-C/TOCropViewController/Resources/tr.lproj"; sourceTree = "<group>"; };
+		12283FF1FA9E73193E59B1E118252996 /* TOCropScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropScrollView.h; path = "Objective-C/TOCropViewController/Views/TOCropScrollView.h"; sourceTree = "<group>"; };
 		149362C8E087B54264E21E5E04717D8C /* Pods-Look Roulette.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Look Roulette.debug.xcconfig"; sourceTree = "<group>"; };
-		170E592205B47D99F75127D8D8A44276 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		186E8FCAC17FD30222968B0FCC3232B4 /* TOCropScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropScrollView.h; path = "Objective-C/TOCropViewController/Views/TOCropScrollView.h"; sourceTree = "<group>"; };
+		194D7907AD3A71A15F98EE51A9A8FAC7 /* AFResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFResult.swift; path = Source/AFResult.swift; sourceTree = "<group>"; };
 		19672639458D5EF5EC76A48F6BF5A2B3 /* CropViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CropViewController.framework; path = CropViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		19C65540E97050FBBECC01D2287237BF /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = "Objective-C/TOCropViewController/Resources/en.lproj"; sourceTree = "<group>"; };
-		1CC92E7C3B2AE55E1294E26BA160A34F /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = tr.lproj; path = "Objective-C/TOCropViewController/Resources/tr.lproj"; sourceTree = "<group>"; };
-		1D65F28A883765B78BB1A5A71A608CF0 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		2147E88B0F5A698A8190D0FF0EFF4243 /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
-		21BDDC39540045D3AC100B050EDA733C /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
+		1AAA64439CD73A4EC7961F7212499635 /* GSImageViewerController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GSImageViewerController-umbrella.h"; sourceTree = "<group>"; };
+		1D3A07DC7AC754956697FD036E38F61F /* CropViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CropViewController.swift; path = Swift/CropViewController/CropViewController.swift; sourceTree = "<group>"; };
+		1DAD9EE65FBBE71C65AFEC78133F3E1D /* da-DK.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "da-DK.lproj"; path = "Objective-C/TOCropViewController/Resources/da-DK.lproj"; sourceTree = "<group>"; };
+		1DB2178B0410252445AF883E7AEC2042 /* GSImageViewerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GSImageViewerController.framework; path = GSImageViewerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E50BD7B4DA0DE4F7D0C77FAD2CF4250 /* GSImageViewerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GSImageViewerController-dummy.m"; sourceTree = "<group>"; };
+		1F8CBACEA2D59DF08F8B8CFE72B59028 /* YoutubePlayerExtras.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoutubePlayerExtras.swift; path = YoutubePlayerView/Classes/YoutubePlayerExtras.swift; sourceTree = "<group>"; };
+		212811048424C6BA3DD34EFB055F4064 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = de.lproj; path = "Objective-C/TOCropViewController/Resources/de.lproj"; sourceTree = "<group>"; };
 		222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		24BF603A2194F8CF1782A8C34ADCA0AA /* TOCropScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropScrollView.m; path = "Objective-C/TOCropViewController/Views/TOCropScrollView.m"; sourceTree = "<group>"; };
-		27AE8101CE30F7DDEA6A29848329A3D6 /* CropViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CropViewController.xcconfig; sourceTree = "<group>"; };
-		2947BF46B194D872634B522B6FF5CF7D /* TOCropViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewController.h; path = "Objective-C/TOCropViewController/TOCropViewController.h"; sourceTree = "<group>"; };
-		2A27A151C716806572CA4E305D8709ED /* CropViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CropViewController-Info.plist"; sourceTree = "<group>"; };
-		2DC865D8ED2740FE45EB00F7D82DD693 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = "Objective-C/TOCropViewController/Resources/es.lproj"; sourceTree = "<group>"; };
-		2E8CB96F0927B55ACB2932BBCA4185DC /* da-DK.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "da-DK.lproj"; path = "Objective-C/TOCropViewController/Resources/da-DK.lproj"; sourceTree = "<group>"; };
-		33340F4C49630C078A9F1F8035B73A8C /* UIImage+CropRotate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+CropRotate.m"; path = "Objective-C/TOCropViewController/Categories/UIImage+CropRotate.m"; sourceTree = "<group>"; };
-		347D37AE01F9D8C955AC45DA1D286752 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		34D58C55D878791CC85737AC69B3E363 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		355ADAD7ADBAEC6221B51BC125463B24 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		394722AC2A80A5E860AD36B263813370 /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
-		3ABA12BAAD125BC25A2B34CAF4CB7B8D /* TOCroppedImageAttributes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCroppedImageAttributes.m; path = "Objective-C/TOCropViewController/Models/TOCroppedImageAttributes.m"; sourceTree = "<group>"; };
-		3BCD31BC25394089002B1DFE6E75D5B4 /* AFResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFResult.swift; path = Source/AFResult.swift; sourceTree = "<group>"; };
-		3CB9720A93D41332EF183D2DA2F9E297 /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ko.lproj; path = "Objective-C/TOCropViewController/Resources/ko.lproj"; sourceTree = "<group>"; };
-		3D3FE64762B0D09EF8B002598A376A4A /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		3E074143937B18F693442AEE4A9B082D /* id.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = id.lproj; path = "Objective-C/TOCropViewController/Resources/id.lproj"; sourceTree = "<group>"; };
-		4595B8FE9C5AD02DC57860D4ABEF3D8B /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		4A2D1AE300CE7AD261F790A629EA8CA9 /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
-		5095E2135C5AFFB1094FD4DE94BA89D1 /* ar.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ar.lproj; path = "Objective-C/TOCropViewController/Resources/ar.lproj"; sourceTree = "<group>"; };
-		5781E2E1E4D9B735C009D303DA726374 /* fa.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fa.lproj; path = "Objective-C/TOCropViewController/Resources/fa.lproj"; sourceTree = "<group>"; };
-		5A183542C439CFF72AC48030395CEB51 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = nl.lproj; path = "Objective-C/TOCropViewController/Resources/nl.lproj"; sourceTree = "<group>"; };
-		5B11DDF53DB060D7E2ECC9ADB2EB49C7 /* TOCropViewControllerTransitioning.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewControllerTransitioning.h; path = "Objective-C/TOCropViewController/Models/TOCropViewControllerTransitioning.h"; sourceTree = "<group>"; };
-		5CC9025AE1CA072871538017FDFF4E7F /* YoutubePlayerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YoutubePlayerView.modulemap; sourceTree = "<group>"; };
-		5CEC656BFA7B53A92AB74A7BE7E3D9D9 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
+		232072F8383F3D4530ACE3D3F27F9393 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		249ACEEE28E7D561D49A56E0FE14FB8C /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		250DC39DDFDBF76F40410FB0202FF225 /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
+		269FB21AA09589BEB19EB3D812BA1CCA /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
+		2D78BB2F64951D1A21BB99BB8E76C31A /* GSImageViewerController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GSImageViewerController-Info.plist"; sourceTree = "<group>"; };
+		2E175C3B2D926EF9B358A82D41B988C9 /* fa-IR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "fa-IR.lproj"; path = "Objective-C/TOCropViewController/Resources/fa-IR.lproj"; sourceTree = "<group>"; };
+		2EAD5DA5A943C66ED8E2C9AA6B12F8A7 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		2EB91946B8A7008A0C425E21E505627C /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		30818C54EEFE52D1E8BC8AA7EA3ADD1E /* Base.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = Base.lproj; path = "Objective-C/TOCropViewController/Resources/Base.lproj"; sourceTree = "<group>"; };
+		31F65455C724BD7559F3BAC3CD45E9B9 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		3240F3336B8FB933963E19C75154903B /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
+		32DE042564FEE8F65F77A365C3D9E77A /* YoutubePlayerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YoutubePlayerView.xcconfig; sourceTree = "<group>"; };
+		3A0E79E6DFC93C13762EC62457CF3588 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		3D3AA076F84F99E0378CBD7D3BFB198E /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		3D424213BBB0CE09D4E32425925D2EA6 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = "Objective-C/TOCropViewController/Resources/es.lproj"; sourceTree = "<group>"; };
+		43B383EADF5F6E03672E27E5F205CB47 /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = it.lproj; path = "Objective-C/TOCropViewController/Resources/it.lproj"; sourceTree = "<group>"; };
+		46D66FDCF420F304E13F642FA2D44C64 /* CropViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CropViewController.h; path = Swift/CropViewController/CropViewController.h; sourceTree = "<group>"; };
+		47C5941D1CEC8BA2F92AD8BAC69B2DD9 /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
+		4DED06A0292B4DF3FFF1BAE143002E4F /* ms.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ms.lproj; path = "Objective-C/TOCropViewController/Resources/ms.lproj"; sourceTree = "<group>"; };
+		4F52D9F2CEAEDA20EE14B53E9B5FA5C5 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = nl.lproj; path = "Objective-C/TOCropViewController/Resources/nl.lproj"; sourceTree = "<group>"; };
+		5B25926F6C0C09CAF22ADE2472844803 /* ar.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ar.lproj; path = "Objective-C/TOCropViewController/Resources/ar.lproj"; sourceTree = "<group>"; };
 		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6070580B095DCA37FC90BE099C42543F /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		60C64060E7BF81D4549BB23777588979 /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
-		619A251AB5CAC19C68055D5DE0D6725A /* Protector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protector.swift; path = Source/Protector.swift; sourceTree = "<group>"; };
-		62FB5A603F4B4FDFC44B34E773990D10 /* TOCropOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropOverlayView.h; path = "Objective-C/TOCropViewController/Views/TOCropOverlayView.h"; sourceTree = "<group>"; };
-		6400870D4FB978B545D6AD0E8901EC76 /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pt.lproj; path = "Objective-C/TOCropViewController/Resources/pt.lproj"; sourceTree = "<group>"; };
-		6842D8FBA3582240683BC6FDE0A11757 /* CropViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CropViewController.modulemap; sourceTree = "<group>"; };
-		6D9EAC893054215804D9FC72ED587A2F /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hant.lproj"; path = "Objective-C/TOCropViewController/Resources/zh-Hant.lproj"; sourceTree = "<group>"; };
-		6F39E9629F27A64F85548FCD557EB141 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		7036C55DAB52AED96BF5C960D43824AE /* CropViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CropViewController-prefix.pch"; sourceTree = "<group>"; };
-		77CB1B9E14101AF182D2A3D557FB0ECA /* TOCropViewControllerTransitioning.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropViewControllerTransitioning.m; path = "Objective-C/TOCropViewController/Models/TOCropViewControllerTransitioning.m"; sourceTree = "<group>"; };
-		7AB3CEDD30201051B31ACD9195FAC114 /* ResourceBundle-TOCropViewControllerBundle-CropViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TOCropViewControllerBundle-CropViewController-Info.plist"; sourceTree = "<group>"; };
-		7C8835ED26E28601E8AFA850D6DD16A0 /* YoutubePlayerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YoutubePlayerView.xcconfig; sourceTree = "<group>"; };
-		8520138E2E73BB2D09E441690C8384B2 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		884DB30445B44CCBF923BAFFACD97854 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.lproj; path = "Objective-C/TOCropViewController/Resources/fr.lproj"; sourceTree = "<group>"; };
-		8AEF182CF86F429A8D5FF59E5EF34408 /* Base.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = Base.lproj; path = "Objective-C/TOCropViewController/Resources/Base.lproj"; sourceTree = "<group>"; };
+		5D833010679821C7DF4112C9BC28A717 /* CropViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CropViewController-Info.plist"; sourceTree = "<group>"; };
+		63ECFADBB680176D24659C46A48208B6 /* CropViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CropViewController.xcconfig; sourceTree = "<group>"; };
+		6D5175F056EDF426C829824E04FFC5CF /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		6E2032D328CA7B5A19FB9E511EAF38B9 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		6F4D32C10C15CAD42AC0554B92DC373D /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
+		6F9331A5D5C0AA0893C4346C84B998A8 /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ko.lproj; path = "Objective-C/TOCropViewController/Resources/ko.lproj"; sourceTree = "<group>"; };
+		72A25AEF9456737F785B4F509E7FC986 /* GSImageViewerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GSImageViewerController.modulemap; sourceTree = "<group>"; };
+		7590DD0A1DB337FE19653F44FBE43A2A /* YoutubePlayerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YoutubePlayerView-dummy.m"; sourceTree = "<group>"; };
+		7639C8D1505C6167966D3699C2DFAB02 /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pt.lproj; path = "Objective-C/TOCropViewController/Resources/pt.lproj"; sourceTree = "<group>"; };
+		764ED333BBE61BE60DB548CFE9A467CC /* CropViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CropViewController.modulemap; sourceTree = "<group>"; };
+		76AD1487BA986E503C92DC282D6D144B /* UIImage+CropRotate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+CropRotate.h"; path = "Objective-C/TOCropViewController/Categories/UIImage+CropRotate.h"; sourceTree = "<group>"; };
+		76D2C85BCBE5FEE73BD7F2074E32A0CA /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		7866C425FE288DD121A9A329DD41B970 /* ResourceBundle-TOCropViewControllerBundle-CropViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TOCropViewControllerBundle-CropViewController-Info.plist"; sourceTree = "<group>"; };
+		7B4186D447C5B29C2354CDEA732F632F /* TOCropViewControllerTransitioning.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropViewControllerTransitioning.m; path = "Objective-C/TOCropViewController/Models/TOCropViewControllerTransitioning.m"; sourceTree = "<group>"; };
+		7B900AB9D8717FA7D00D36D39B369507 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		7CCF2FC733D8EA8032688A12129A1AE6 /* TOActivityCroppedImageProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOActivityCroppedImageProvider.h; path = "Objective-C/TOCropViewController/Models/TOActivityCroppedImageProvider.h"; sourceTree = "<group>"; };
+		812CB48C60521942D5F51B6B9BA2504A /* TOCropScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropScrollView.m; path = "Objective-C/TOCropViewController/Views/TOCropScrollView.m"; sourceTree = "<group>"; };
+		826B3717AD23A8CB9DA5C5704373C503 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ru.lproj; path = "Objective-C/TOCropViewController/Resources/ru.lproj"; sourceTree = "<group>"; };
+		82817B6FF918DA6C43DF444A0D233A52 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = "Objective-C/TOCropViewController/Resources/en.lproj"; sourceTree = "<group>"; };
+		8718A0713713E35D78E46B28FE15C6B2 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
+		87CB269E249A75B9559BD3291D7BA6E1 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		897333A6D4AE0B0C29235A3F401240AB /* GSImageViewerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GSImageViewerController.swift; path = GSImageViewerController/GSImageViewerController.swift; sourceTree = "<group>"; };
+		8A97E8F10716A929B9CFCC2AA5D7E4DD /* YoutubePlayerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YoutubePlayerView-umbrella.h"; sourceTree = "<group>"; };
 		8B079F294DA5D9A879E6D53A91F51A1E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		8B21A58C66682157CD142A3F95A9CBC5 /* CropViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CropViewController-dummy.m"; sourceTree = "<group>"; };
-		8BD8492E0FB9663756C9AF864CE7EC05 /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = it.lproj; path = "Objective-C/TOCropViewController/Resources/it.lproj"; sourceTree = "<group>"; };
-		8DC7CB03DCA55C41B56B7DF2BBB41534 /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
-		8F8A66F23DB130AE4198A530264AAFFA /* TOCroppedImageAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCroppedImageAttributes.h; path = "Objective-C/TOCropViewController/Models/TOCroppedImageAttributes.h"; sourceTree = "<group>"; };
-		91F6EEF3CF5FB29EFBEED359AFB96C3F /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		966A09265189E7F52B6F2BBA07DB9EAC /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "Objective-C/TOCropViewController/Resources/zh-Hans.lproj"; sourceTree = "<group>"; };
-		9765E9ACFC2D5208D10A0302E71E1AD6 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = de.lproj; path = "Objective-C/TOCropViewController/Resources/de.lproj"; sourceTree = "<group>"; };
+		8C1C76DC9612CA462CC9F31863D355C5 /* TOCropViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewController.h; path = "Objective-C/TOCropViewController/TOCropViewController.h"; sourceTree = "<group>"; };
+		8D048E1892AE5344B837AC7E10E2F3E5 /* YoutubePlayerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoutubePlayerView.swift; path = YoutubePlayerView/Classes/YoutubePlayerView.swift; sourceTree = "<group>"; };
+		909DB3E6016EAC3849A709434786CC05 /* TOCropViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropViewController.m; path = "Objective-C/TOCropViewController/TOCropViewController.m"; sourceTree = "<group>"; };
+		93E185E79684998DA1791162F3D13F9C /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "Objective-C/TOCropViewController/Resources/zh-Hans.lproj"; sourceTree = "<group>"; };
+		94F1AD7CA68FCAB818D781710467CE23 /* TOCroppedImageAttributes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCroppedImageAttributes.m; path = "Objective-C/TOCropViewController/Models/TOCroppedImageAttributes.m"; sourceTree = "<group>"; };
 		97A93DCEF2B1499B1F84D43333829DC7 /* TOCropViewControllerBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TOCropViewControllerBundle.bundle; path = "CropViewController-TOCropViewControllerBundle.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97E3CB1FC54130B5B3EA5309CB0A12BD /* TOCropView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropView.h; path = "Objective-C/TOCropViewController/Views/TOCropView.h"; sourceTree = "<group>"; };
 		9830A6C56902BB4685F4F77BBD19758C /* Pods-Look Roulette-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Look Roulette-umbrella.h"; sourceTree = "<group>"; };
-		9D826342EC8250DC9907FF9EB0CDEF03 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pl.lproj; path = "Objective-C/TOCropViewController/Resources/pl.lproj"; sourceTree = "<group>"; };
+		98FF02C881C320645938A30809B1DEEA /* TOCroppedImageAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCroppedImageAttributes.h; path = "Objective-C/TOCropViewController/Models/TOCroppedImageAttributes.h"; sourceTree = "<group>"; };
+		9B66211414CC562125C4D6086C6B27DA /* TOCropOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropOverlayView.h; path = "Objective-C/TOCropViewController/Views/TOCropOverlayView.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9EB2BEA193393A128AA194FE783787B1 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
+		A0A516F01D42EAEF4D1D8ACEF6C61C89 /* YoutubePlayerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YoutubePlayerView-Info.plist"; sourceTree = "<group>"; };
+		A1209C092C992CEE007C6891454C8995 /* ro.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ro.lproj; path = "Objective-C/TOCropViewController/Resources/ro.lproj"; sourceTree = "<group>"; };
 		A20E42EBF0B4A2BCB6A7DFC6A1FE33D1 /* Pods_Look_Roulette.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Look_Roulette.framework; path = "Pods-Look Roulette.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2944A82E1F3EAEA4B817577A7347CE2 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		A5E82C5844451CACF1F1A83CB661868A /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
-		A626BB2F392C1F05591966221721B9A2 /* TOCropToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropToolbar.h; path = "Objective-C/TOCropViewController/Views/TOCropToolbar.h"; sourceTree = "<group>"; };
-		A7C894753FE21A0CB8D69FAEEF21C33C /* vi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = vi.lproj; path = "Objective-C/TOCropViewController/Resources/vi.lproj"; sourceTree = "<group>"; };
-		A7F010D0DD3AE1463FE4309501E2C05B /* hu.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = hu.lproj; path = "Objective-C/TOCropViewController/Resources/hu.lproj"; sourceTree = "<group>"; };
-		AE2DF8FE7CC64CBA1D0DDDC898825D13 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
+		A4F5B5CD5B8A90D7E91F711AC081AAFA /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		A7719740E9045F631809E80C4D09B8BB /* GSImageViewerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GSImageViewerController-prefix.pch"; sourceTree = "<group>"; };
+		ABF9AA3EC19B921AF822E4AA12FB44B8 /* Protector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protector.swift; path = Source/Protector.swift; sourceTree = "<group>"; };
 		AF9385ABA896226EB84EC5D36032EB86 /* YoutubePlayerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YoutubePlayerView.framework; path = YoutubePlayerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFD6FF85E947E2BE224EDA310AFAA6AB /* YoutubePlayerExtras.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoutubePlayerExtras.swift; path = YoutubePlayerView/Classes/YoutubePlayerExtras.swift; sourceTree = "<group>"; };
-		B87CDC70B49BFBB1DC9CF608EB421D89 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		BCB5D2DC472F565CCCD89D51AFF0AE07 /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
-		BDFA75329F2B54450E935BEF7915C08D /* TOCropView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropView.h; path = "Objective-C/TOCropViewController/Views/TOCropView.h"; sourceTree = "<group>"; };
+		B1DDFB95272D311B94D87C56341A230C /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		B2C6C63DD26D90C3784E24BCB8C48F71 /* TOCropToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropToolbar.h; path = "Objective-C/TOCropViewController/Views/TOCropToolbar.h"; sourceTree = "<group>"; };
+		B42BF78E46E1FC045B838B14CFC6281B /* CropViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CropViewController-dummy.m"; sourceTree = "<group>"; };
+		B656D79FE7DA12D00F68DBE7EF0B9D3F /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hant.lproj"; path = "Objective-C/TOCropViewController/Resources/zh-Hant.lproj"; sourceTree = "<group>"; };
+		B952F250D0340F1940BEFBED4E676005 /* TOCropView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropView.m; path = "Objective-C/TOCropViewController/Views/TOCropView.m"; sourceTree = "<group>"; };
+		BB55237B121EAB6ECE0A773AD2C6DB2F /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		BD4CF68A801E805F2D3FA70DB94B0B91 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		BE07B9D653069FC47205A9FF5479E6EA /* vi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = vi.lproj; path = "Objective-C/TOCropViewController/Resources/vi.lproj"; sourceTree = "<group>"; };
 		BFA0299F554861BF590878B6A64C5682 /* Pods-Look Roulette-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Look Roulette-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C00B869B8D310E763E147AEE5DFA4B1B /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.lproj; path = "Objective-C/TOCropViewController/Resources/ja.lproj"; sourceTree = "<group>"; };
-		C08FD47BD13615B2543869C9D956C107 /* ms.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ms.lproj; path = "Objective-C/TOCropViewController/Resources/ms.lproj"; sourceTree = "<group>"; };
-		C1F6635D5567A36514595C16608D7A60 /* TOCropOverlayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropOverlayView.m; path = "Objective-C/TOCropViewController/Views/TOCropOverlayView.m"; sourceTree = "<group>"; };
-		C20597E75E30692F0BBD9B543125C199 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		C0E89259F806D1D875C515F68580F78A /* id.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = id.lproj; path = "Objective-C/TOCropViewController/Resources/id.lproj"; sourceTree = "<group>"; };
+		C1A4A2562923A7FF9615C4B653080A01 /* TOCropViewConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewConstants.h; path = "Objective-C/TOCropViewController/Constants/TOCropViewConstants.h"; sourceTree = "<group>"; };
+		C21E40FE6A56168758F7B012BA4E5BBB /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		C23DB6BBD9067E5D4C1864D7C7087970 /* TOCropViewControllerTransitioning.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewControllerTransitioning.h; path = "Objective-C/TOCropViewController/Models/TOCropViewControllerTransitioning.h"; sourceTree = "<group>"; };
 		C4550D72208CF6E25FABB7C58D7D1E11 /* Pods-Look Roulette-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Look Roulette-Info.plist"; sourceTree = "<group>"; };
-		C47DA8CA6B02C74ABCAA4F9F802EA205 /* fa-IR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "fa-IR.lproj"; path = "Objective-C/TOCropViewController/Resources/fa-IR.lproj"; sourceTree = "<group>"; };
-		C9C6A07FBD597C3560285DAC55A6395E /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
-		D1A27BFEA3FB43F63EFB7D54DE254CF6 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ru.lproj; path = "Objective-C/TOCropViewController/Resources/ru.lproj"; sourceTree = "<group>"; };
-		E1C0A4CD527362CC6BD25425ED56A3BB /* CropViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CropViewController.h; path = Swift/CropViewController/CropViewController.h; sourceTree = "<group>"; };
-		E24B5D2D6489C654686F39EE19C0F735 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
-		E45B1E89754917AC4B712C9972A3AF8B /* YoutubePlayerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YoutubePlayerView-umbrella.h"; sourceTree = "<group>"; };
-		E49BAA34AA95B63979FE6987798EE2C6 /* TOActivityCroppedImageProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOActivityCroppedImageProvider.m; path = "Objective-C/TOCropViewController/Models/TOActivityCroppedImageProvider.m"; sourceTree = "<group>"; };
-		E8E615C4CC667DE00412BE6A8192B224 /* YoutubePlayerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoutubePlayerView.swift; path = YoutubePlayerView/Classes/YoutubePlayerView.swift; sourceTree = "<group>"; };
+		C59D70C4905D36CF5B97CFCD903DF4E8 /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
+		C62E3337B962C3F41D546B53E6333397 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
+		C6C4C09FAB8566542D8C7EFFC154EC88 /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
+		C791E75A194455769FC57A4167A6F8B0 /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
+		C9BE488C5722C45A3A98D38C8A900108 /* TOCropOverlayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropOverlayView.m; path = "Objective-C/TOCropViewController/Views/TOCropOverlayView.m"; sourceTree = "<group>"; };
+		CAC497020AE05F43D0EE94D016FA0F69 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pl.lproj; path = "Objective-C/TOCropViewController/Resources/pl.lproj"; sourceTree = "<group>"; };
+		D1A8CB512C117A20D2DA16F33EA0583E /* YoutubePlayerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YoutubePlayerView-prefix.pch"; sourceTree = "<group>"; };
+		D4620A6698526BCD77BD399759C4AECA /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
+		D48056E651BB0F33E8A07B2E2423B2D2 /* YoutubePlayerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YoutubePlayerView.modulemap; sourceTree = "<group>"; };
+		D6C76ED6BE8E1696299CF440101BE5D1 /* TOActivityCroppedImageProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOActivityCroppedImageProvider.m; path = "Objective-C/TOCropViewController/Models/TOActivityCroppedImageProvider.m"; sourceTree = "<group>"; };
+		D9B54F961174B2D39049C1159D37EC5A /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.lproj; path = "Objective-C/TOCropViewController/Resources/ja.lproj"; sourceTree = "<group>"; };
+		DA416371BEFF593A4B5B6E8F8D080130 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
+		DB4500AF6D7EDDA48FCF5B26AAD987AA /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
+		DC30C32930BE6A4873F3CA71E0F61604 /* CropViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CropViewController-prefix.pch"; sourceTree = "<group>"; };
+		E258F9EB369F9919F717A63AB88B0FD4 /* CropViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CropViewController-umbrella.h"; sourceTree = "<group>"; };
+		E7F4E6C75BA797DD4D6D4D745C45CF53 /* fa.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fa.lproj; path = "Objective-C/TOCropViewController/Resources/fa.lproj"; sourceTree = "<group>"; };
+		ED841EC43F2B8966B8D866DA1D543D2B /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
 		EE1FB4CDB9F80530319B9CBC947DE614 /* Pods-Look Roulette-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Look Roulette-acknowledgements.plist"; sourceTree = "<group>"; };
-		F0123D92ADACEF8775FE322E79D45996 /* TOCropViewConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewConstants.h; path = "Objective-C/TOCropViewController/Constants/TOCropViewConstants.h"; sourceTree = "<group>"; };
-		F097CB0BB1702C97C7047939CF201997 /* ro.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ro.lproj; path = "Objective-C/TOCropViewController/Resources/ro.lproj"; sourceTree = "<group>"; };
-		F09E29ACA22560EAE7C479C6EDC9E287 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		F41C04E1DA1B6C33CFD23184A31177E4 /* YoutubePlayerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YoutubePlayerView-prefix.pch"; sourceTree = "<group>"; };
-		F481D91117E40CD84AA4A01CCD4AC446 /* TOActivityCroppedImageProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOActivityCroppedImageProvider.h; path = "Objective-C/TOCropViewController/Models/TOActivityCroppedImageProvider.h"; sourceTree = "<group>"; };
-		F5156DE4DB98DF3CE8CE8464FBA88D97 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		F5671F4B2FD2FC5D3DF82CAFDA84212A /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
+		EE38828A4BDDCA8BC38A5C951798C05A /* GSImageViewerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GSImageViewerController.xcconfig; sourceTree = "<group>"; };
+		EF7951DAB693A758AE1668DB44F41B0D /* UIImage+CropRotate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+CropRotate.m"; path = "Objective-C/TOCropViewController/Categories/UIImage+CropRotate.m"; sourceTree = "<group>"; };
+		F26BF67AED46D374F8D6C065F49E1191 /* hu.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = hu.lproj; path = "Objective-C/TOCropViewController/Resources/hu.lproj"; sourceTree = "<group>"; };
+		F53DC79319ACFEB5D21BEB71B2025ECB /* TOCropToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropToolbar.m; path = "Objective-C/TOCropViewController/Views/TOCropToolbar.m"; sourceTree = "<group>"; };
 		F588C06E53107C3B536BE44B556A8C76 /* Pods-Look Roulette.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Look Roulette.release.xcconfig"; sourceTree = "<group>"; };
 		F7152D6F75EDABAF45FD1A1307E1A4ED /* Pods-Look Roulette-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Look Roulette-frameworks.sh"; sourceTree = "<group>"; };
-		F9964EF1B4F4C0B547D93C61F42CB3EF /* YoutubePlayerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YoutubePlayerView-Info.plist"; sourceTree = "<group>"; };
 		F9A2C1A9EFD8917C4E045C81ACD3199C /* Pods-Look Roulette-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Look Roulette-dummy.m"; sourceTree = "<group>"; };
-		FA82851B6BD177A95A914BC2DCBC099E /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
+		FB419DEBB93FBADAFF43CE57291271C6 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.lproj; path = "Objective-C/TOCropViewController/Resources/fr.lproj"; sourceTree = "<group>"; };
+		FB67F9199783E6B10E78151FD9B45F87 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		FC6BF32F5C07D679DA5A592F27BBF986 /* Pods-Look Roulette.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Look Roulette.modulemap"; sourceTree = "<group>"; };
-		FDC2A44D5BAAA0DEBD6E8A1D9D713B8E /* CropViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CropViewController-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,18 +277,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6A7F3D8ED3D5EF252563D9E94433DE1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1BFEDA3A29284B4AB5D2E0732877CE6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A8BF395C11331F8E6190251FF35F858B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AEBEC26477A23D873FF7C45BF62223A5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B8F16CE35760C92CF531A8C8979BD03 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +297,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D7657AFC2126AE0FE594C71B95C342D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B59DC4E32EAAB1CA12822FC9806FA4E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				646D952FFD1EE79CC838564AC3491365 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,27 +320,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1264FE312D0E5FCEA214B013FB82221E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6842D8FBA3582240683BC6FDE0A11757 /* CropViewController.modulemap */,
-				27AE8101CE30F7DDEA6A29848329A3D6 /* CropViewController.xcconfig */,
-				8B21A58C66682157CD142A3F95A9CBC5 /* CropViewController-dummy.m */,
-				2A27A151C716806572CA4E305D8709ED /* CropViewController-Info.plist */,
-				7036C55DAB52AED96BF5C960D43824AE /* CropViewController-prefix.pch */,
-				FDC2A44D5BAAA0DEBD6E8A1D9D713B8E /* CropViewController-umbrella.h */,
-				7AB3CEDD30201051B31ACD9195FAC114 /* ResourceBundle-TOCropViewControllerBundle-CropViewController-Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/CropViewController";
-			sourceTree = "<group>";
-		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				E34DCC8E2CF86B8D72232914781A840D /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		194256FBF07EE37AA6350675C8DFCD75 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				72A25AEF9456737F785B4F509E7FC986 /* GSImageViewerController.modulemap */,
+				EE38828A4BDDCA8BC38A5C951798C05A /* GSImageViewerController.xcconfig */,
+				1E50BD7B4DA0DE4F7D0C77FAD2CF4250 /* GSImageViewerController-dummy.m */,
+				2D78BB2F64951D1A21BB99BB8E76C31A /* GSImageViewerController-Info.plist */,
+				A7719740E9045F631809E80C4D09B8BB /* GSImageViewerController-prefix.pch */,
+				1AAA64439CD73A4EC7961F7212499635 /* GSImageViewerController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GSImageViewerController";
+			sourceTree = "<group>";
+		};
+		221F4D547CA3539E2ED853012F27939C /* CropViewController */ = {
+			isa = PBXGroup;
+			children = (
+				46D66FDCF420F304E13F642FA2D44C64 /* CropViewController.h */,
+				1D3A07DC7AC754956697FD036E38F61F /* CropViewController.swift */,
+				7CCF2FC733D8EA8032688A12129A1AE6 /* TOActivityCroppedImageProvider.h */,
+				D6C76ED6BE8E1696299CF440101BE5D1 /* TOActivityCroppedImageProvider.m */,
+				9B66211414CC562125C4D6086C6B27DA /* TOCropOverlayView.h */,
+				C9BE488C5722C45A3A98D38C8A900108 /* TOCropOverlayView.m */,
+				98FF02C881C320645938A30809B1DEEA /* TOCroppedImageAttributes.h */,
+				94F1AD7CA68FCAB818D781710467CE23 /* TOCroppedImageAttributes.m */,
+				12283FF1FA9E73193E59B1E118252996 /* TOCropScrollView.h */,
+				812CB48C60521942D5F51B6B9BA2504A /* TOCropScrollView.m */,
+				B2C6C63DD26D90C3784E24BCB8C48F71 /* TOCropToolbar.h */,
+				F53DC79319ACFEB5D21BEB71B2025ECB /* TOCropToolbar.m */,
+				97E3CB1FC54130B5B3EA5309CB0A12BD /* TOCropView.h */,
+				B952F250D0340F1940BEFBED4E676005 /* TOCropView.m */,
+				C1A4A2562923A7FF9615C4B653080A01 /* TOCropViewConstants.h */,
+				8C1C76DC9612CA462CC9F31863D355C5 /* TOCropViewController.h */,
+				909DB3E6016EAC3849A709434786CC05 /* TOCropViewController.m */,
+				C23DB6BBD9067E5D4C1864D7C7087970 /* TOCropViewControllerTransitioning.h */,
+				7B4186D447C5B29C2354CDEA732F632F /* TOCropViewControllerTransitioning.m */,
+				76AD1487BA986E503C92DC282D6D144B /* UIImage+CropRotate.h */,
+				EF7951DAB693A758AE1668DB44F41B0D /* UIImage+CropRotate.m */,
+				B2DE6C9ED084D5E14CB3CC151CED6AF2 /* Resources */,
+				AE360BAF7AB681615933BC84253B5C54 /* Support Files */,
+			);
+			name = CropViewController;
+			path = CropViewController;
+			sourceTree = "<group>";
+		};
+		28C44580DE2170C48B5F4529F34BF61E /* GSImageViewerController */ = {
+			isa = PBXGroup;
+			children = (
+				897333A6D4AE0B0C29235A3F401240AB /* GSImageViewerController.swift */,
+				194256FBF07EE37AA6350675C8DFCD75 /* Support Files */,
+			);
+			name = GSImageViewerController;
+			path = GSImageViewerController;
 			sourceTree = "<group>";
 		};
 		2FDD81A57755AFDD3EA487072D667E92 /* Targets Support Files */ = {
@@ -324,100 +391,15 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		303593BAC28A29C6CFE4D6A3B82AFA54 /* Alamofire */ = {
+		7AD894D9FC167752C7AEA0232E1353C0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1D65F28A883765B78BB1A5A71A608CF0 /* AFError.swift */,
-				3BCD31BC25394089002B1DFE6E75D5B4 /* AFResult.swift */,
-				347D37AE01F9D8C955AC45DA1D286752 /* Alamofire.swift */,
-				F5671F4B2FD2FC5D3DF82CAFDA84212A /* AlamofireExtended.swift */,
-				FA82851B6BD177A95A914BC2DCBC099E /* CachedResponseHandler.swift */,
-				A2944A82E1F3EAEA4B817577A7347CE2 /* DispatchQueue+Alamofire.swift */,
-				60C64060E7BF81D4549BB23777588979 /* EventMonitor.swift */,
-				2147E88B0F5A698A8190D0FF0EFF4243 /* HTTPHeaders.swift */,
-				21BDDC39540045D3AC100B050EDA733C /* HTTPMethod.swift */,
-				34D58C55D878791CC85737AC69B3E363 /* MultipartFormData.swift */,
-				0D7F7D14774AAE40C2550F56B08ACB81 /* MultipartUpload.swift */,
-				355ADAD7ADBAEC6221B51BC125463B24 /* NetworkReachabilityManager.swift */,
-				09A718C77FE90E9601B13A3969642DBC /* Notifications.swift */,
-				8520138E2E73BB2D09E441690C8384B2 /* OperationQueue+Alamofire.swift */,
-				394722AC2A80A5E860AD36B263813370 /* ParameterEncoder.swift */,
-				C20597E75E30692F0BBD9B543125C199 /* ParameterEncoding.swift */,
-				619A251AB5CAC19C68055D5DE0D6725A /* Protector.swift */,
-				E24B5D2D6489C654686F39EE19C0F735 /* RedirectHandler.swift */,
-				6070580B095DCA37FC90BE099C42543F /* Request.swift */,
-				BCB5D2DC472F565CCCD89D51AFF0AE07 /* RequestInterceptor.swift */,
-				4A2D1AE300CE7AD261F790A629EA8CA9 /* RequestTaskMap.swift */,
-				B87CDC70B49BFBB1DC9CF608EB421D89 /* Response.swift */,
-				91F6EEF3CF5FB29EFBEED359AFB96C3F /* ResponseSerialization.swift */,
-				8DC7CB03DCA55C41B56B7DF2BBB41534 /* RetryPolicy.swift */,
-				A5E82C5844451CACF1F1A83CB661868A /* ServerTrustEvaluation.swift */,
-				C9C6A07FBD597C3560285DAC55A6395E /* Session.swift */,
-				F09E29ACA22560EAE7C479C6EDC9E287 /* SessionDelegate.swift */,
-				AE2DF8FE7CC64CBA1D0DDDC898825D13 /* URLConvertible+URLRequestConvertible.swift */,
-				9EB2BEA193393A128AA194FE783787B1 /* URLRequest+Alamofire.swift */,
-				5CEC656BFA7B53A92AB74A7BE7E3D9D9 /* URLSessionConfiguration+Alamofire.swift */,
-				3D3FE64762B0D09EF8B002598A376A4A /* Validation.swift */,
-				D4D7F65C8654BD88E9042BA8D668F71A /* Support Files */,
+				91D36A2EF68E6567A1411D99B379873A /* Alamofire */,
+				221F4D547CA3539E2ED853012F27939C /* CropViewController */,
+				28C44580DE2170C48B5F4529F34BF61E /* GSImageViewerController */,
+				ED1483CBCA6CF0C68CCDAFD218E82578 /* YoutubePlayerView */,
 			);
-			name = Alamofire;
-			path = Alamofire;
-			sourceTree = "<group>";
-		};
-		4E4A9C1C0BDEE0C7AACF33DA9CE59F4C /* YoutubePlayerView */ = {
-			isa = PBXGroup;
-			children = (
-				AFD6FF85E947E2BE224EDA310AFAA6AB /* YoutubePlayerExtras.swift */,
-				E8E615C4CC667DE00412BE6A8192B224 /* YoutubePlayerView.swift */,
-				7DB5EDCAF83D065AA313DA2623621C9A /* Support Files */,
-			);
-			name = YoutubePlayerView;
-			path = YoutubePlayerView;
-			sourceTree = "<group>";
-		};
-		6E6932BC313AEE2A022259E7E7849027 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				5095E2135C5AFFB1094FD4DE94BA89D1 /* ar.lproj */,
-				8AEF182CF86F429A8D5FF59E5EF34408 /* Base.lproj */,
-				2E8CB96F0927B55ACB2932BBCA4185DC /* da-DK.lproj */,
-				9765E9ACFC2D5208D10A0302E71E1AD6 /* de.lproj */,
-				19C65540E97050FBBECC01D2287237BF /* en.lproj */,
-				2DC865D8ED2740FE45EB00F7D82DD693 /* es.lproj */,
-				5781E2E1E4D9B735C009D303DA726374 /* fa.lproj */,
-				C47DA8CA6B02C74ABCAA4F9F802EA205 /* fa-IR.lproj */,
-				884DB30445B44CCBF923BAFFACD97854 /* fr.lproj */,
-				A7F010D0DD3AE1463FE4309501E2C05B /* hu.lproj */,
-				3E074143937B18F693442AEE4A9B082D /* id.lproj */,
-				8BD8492E0FB9663756C9AF864CE7EC05 /* it.lproj */,
-				C00B869B8D310E763E147AEE5DFA4B1B /* ja.lproj */,
-				3CB9720A93D41332EF183D2DA2F9E297 /* ko.lproj */,
-				C08FD47BD13615B2543869C9D956C107 /* ms.lproj */,
-				5A183542C439CFF72AC48030395CEB51 /* nl.lproj */,
-				9D826342EC8250DC9907FF9EB0CDEF03 /* pl.lproj */,
-				6400870D4FB978B545D6AD0E8901EC76 /* pt.lproj */,
-				F097CB0BB1702C97C7047939CF201997 /* ro.lproj */,
-				D1A27BFEA3FB43F63EFB7D54DE254CF6 /* ru.lproj */,
-				1CC92E7C3B2AE55E1294E26BA160A34F /* tr.lproj */,
-				A7C894753FE21A0CB8D69FAEEF21C33C /* vi.lproj */,
-				966A09265189E7F52B6F2BBA07DB9EAC /* zh-Hans.lproj */,
-				6D9EAC893054215804D9FC72ED587A2F /* zh-Hant.lproj */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		7DB5EDCAF83D065AA313DA2623621C9A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5CC9025AE1CA072871538017FDFF4E7F /* YoutubePlayerView.modulemap */,
-				7C8835ED26E28601E8AFA850D6DD16A0 /* YoutubePlayerView.xcconfig */,
-				1269E116B868377C023870EA0039A24C /* YoutubePlayerView-dummy.m */,
-				F9964EF1B4F4C0B547D93C61F42CB3EF /* YoutubePlayerView-Info.plist */,
-				F41C04E1DA1B6C33CFD23184A31177E4 /* YoutubePlayerView-prefix.pch */,
-				E45B1E89754917AC4B712C9972A3AF8B /* YoutubePlayerView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/YoutubePlayerView";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7F0A27A5CBB82E3683B6FB12AC51B2F6 /* Pods-Look Roulette */ = {
@@ -437,14 +419,118 @@
 			path = "Target Support Files/Pods-Look Roulette";
 			sourceTree = "<group>";
 		};
-		A688CA5486503B4B78819FE60071EF91 /* Pods */ = {
+		91D36A2EF68E6567A1411D99B379873A /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				303593BAC28A29C6CFE4D6A3B82AFA54 /* Alamofire */,
-				DA918E74642A6F056280DA0DEAC7FE4E /* CropViewController */,
-				4E4A9C1C0BDEE0C7AACF33DA9CE59F4C /* YoutubePlayerView */,
+				A4F5B5CD5B8A90D7E91F711AC081AAFA /* AFError.swift */,
+				194D7907AD3A71A15F98EE51A9A8FAC7 /* AFResult.swift */,
+				BB55237B121EAB6ECE0A773AD2C6DB2F /* Alamofire.swift */,
+				C791E75A194455769FC57A4167A6F8B0 /* AlamofireExtended.swift */,
+				6F4D32C10C15CAD42AC0554B92DC373D /* CachedResponseHandler.swift */,
+				FB67F9199783E6B10E78151FD9B45F87 /* DispatchQueue+Alamofire.swift */,
+				269FB21AA09589BEB19EB3D812BA1CCA /* EventMonitor.swift */,
+				47C5941D1CEC8BA2F92AD8BAC69B2DD9 /* HTTPHeaders.swift */,
+				8718A0713713E35D78E46B28FE15C6B2 /* HTTPMethod.swift */,
+				2EAD5DA5A943C66ED8E2C9AA6B12F8A7 /* MultipartFormData.swift */,
+				0C749B89DD8DEB8B615A18637037F36A /* MultipartUpload.swift */,
+				3D3AA076F84F99E0378CBD7D3BFB198E /* NetworkReachabilityManager.swift */,
+				31F65455C724BD7559F3BAC3CD45E9B9 /* Notifications.swift */,
+				C21E40FE6A56168758F7B012BA4E5BBB /* OperationQueue+Alamofire.swift */,
+				DB4500AF6D7EDDA48FCF5B26AAD987AA /* ParameterEncoder.swift */,
+				3A0E79E6DFC93C13762EC62457CF3588 /* ParameterEncoding.swift */,
+				ABF9AA3EC19B921AF822E4AA12FB44B8 /* Protector.swift */,
+				3240F3336B8FB933963E19C75154903B /* RedirectHandler.swift */,
+				76D2C85BCBE5FEE73BD7F2074E32A0CA /* Request.swift */,
+				250DC39DDFDBF76F40410FB0202FF225 /* RequestInterceptor.swift */,
+				C59D70C4905D36CF5B97CFCD903DF4E8 /* RequestTaskMap.swift */,
+				249ACEEE28E7D561D49A56E0FE14FB8C /* Response.swift */,
+				BD4CF68A801E805F2D3FA70DB94B0B91 /* ResponseSerialization.swift */,
+				C6C4C09FAB8566542D8C7EFFC154EC88 /* RetryPolicy.swift */,
+				C62E3337B962C3F41D546B53E6333397 /* ServerTrustEvaluation.swift */,
+				0B0D0F71439653C44D661D71D28CF0F8 /* Session.swift */,
+				232072F8383F3D4530ACE3D3F27F9393 /* SessionDelegate.swift */,
+				ED841EC43F2B8966B8D866DA1D543D2B /* URLConvertible+URLRequestConvertible.swift */,
+				DA416371BEFF593A4B5B6E8F8D080130 /* URLRequest+Alamofire.swift */,
+				D4620A6698526BCD77BD399759C4AECA /* URLSessionConfiguration+Alamofire.swift */,
+				6E2032D328CA7B5A19FB9E511EAF38B9 /* Validation.swift */,
+				A0188B94A768FAF19CFA7E7382845172 /* Support Files */,
 			);
-			name = Pods;
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		A0188B94A768FAF19CFA7E7382845172 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				87CB269E249A75B9559BD3291D7BA6E1 /* Alamofire.modulemap */,
+				6D5175F056EDF426C829824E04FFC5CF /* Alamofire.xcconfig */,
+				7B900AB9D8717FA7D00D36D39B369507 /* Alamofire-dummy.m */,
+				2EB91946B8A7008A0C425E21E505627C /* Alamofire-Info.plist */,
+				B1DDFB95272D311B94D87C56341A230C /* Alamofire-prefix.pch */,
+				09F94A2A72775D8CF930EA8187E9FE13 /* Alamofire-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		AE360BAF7AB681615933BC84253B5C54 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				764ED333BBE61BE60DB548CFE9A467CC /* CropViewController.modulemap */,
+				63ECFADBB680176D24659C46A48208B6 /* CropViewController.xcconfig */,
+				B42BF78E46E1FC045B838B14CFC6281B /* CropViewController-dummy.m */,
+				5D833010679821C7DF4112C9BC28A717 /* CropViewController-Info.plist */,
+				DC30C32930BE6A4873F3CA71E0F61604 /* CropViewController-prefix.pch */,
+				E258F9EB369F9919F717A63AB88B0FD4 /* CropViewController-umbrella.h */,
+				7866C425FE288DD121A9A329DD41B970 /* ResourceBundle-TOCropViewControllerBundle-CropViewController-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CropViewController";
+			sourceTree = "<group>";
+		};
+		B2DE6C9ED084D5E14CB3CC151CED6AF2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5B25926F6C0C09CAF22ADE2472844803 /* ar.lproj */,
+				30818C54EEFE52D1E8BC8AA7EA3ADD1E /* Base.lproj */,
+				1DAD9EE65FBBE71C65AFEC78133F3E1D /* da-DK.lproj */,
+				212811048424C6BA3DD34EFB055F4064 /* de.lproj */,
+				82817B6FF918DA6C43DF444A0D233A52 /* en.lproj */,
+				3D424213BBB0CE09D4E32425925D2EA6 /* es.lproj */,
+				E7F4E6C75BA797DD4D6D4D745C45CF53 /* fa.lproj */,
+				2E175C3B2D926EF9B358A82D41B988C9 /* fa-IR.lproj */,
+				FB419DEBB93FBADAFF43CE57291271C6 /* fr.lproj */,
+				F26BF67AED46D374F8D6C065F49E1191 /* hu.lproj */,
+				C0E89259F806D1D875C515F68580F78A /* id.lproj */,
+				43B383EADF5F6E03672E27E5F205CB47 /* it.lproj */,
+				D9B54F961174B2D39049C1159D37EC5A /* ja.lproj */,
+				6F9331A5D5C0AA0893C4346C84B998A8 /* ko.lproj */,
+				4DED06A0292B4DF3FFF1BAE143002E4F /* ms.lproj */,
+				4F52D9F2CEAEDA20EE14B53E9B5FA5C5 /* nl.lproj */,
+				CAC497020AE05F43D0EE94D016FA0F69 /* pl.lproj */,
+				7639C8D1505C6167966D3699C2DFAB02 /* pt.lproj */,
+				A1209C092C992CEE007C6891454C8995 /* ro.lproj */,
+				826B3717AD23A8CB9DA5C5704373C503 /* ru.lproj */,
+				0DB3818F4FE99BA640DC7E91DB98B7C8 /* tr.lproj */,
+				BE07B9D653069FC47205A9FF5479E6EA /* vi.lproj */,
+				93E185E79684998DA1791162F3D13F9C /* zh-Hans.lproj */,
+				B656D79FE7DA12D00F68DBE7EF0B9D3F /* zh-Hant.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B871B5F3E64AF6FC0610F003B8EDCC6B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D48056E651BB0F33E8A07B2E2423B2D2 /* YoutubePlayerView.modulemap */,
+				32DE042564FEE8F65F77A365C3D9E77A /* YoutubePlayerView.xcconfig */,
+				7590DD0A1DB337FE19653F44FBE43A2A /* YoutubePlayerView-dummy.m */,
+				A0A516F01D42EAEF4D1D8ACEF6C61C89 /* YoutubePlayerView-Info.plist */,
+				D1A8CB512C117A20D2DA16F33EA0583E /* YoutubePlayerView-prefix.pch */,
+				8A97E8F10716A929B9CFCC2AA5D7E4DD /* YoutubePlayerView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YoutubePlayerView";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -452,67 +538,23 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				A688CA5486503B4B78819FE60071EF91 /* Pods */,
-				D0B14C0C543F0CE61E272F257536A0DE /* Products */,
+				7AD894D9FC167752C7AEA0232E1353C0 /* Pods */,
+				DA2A93CDCE2B7BCCBB0A8C1E953F616C /* Products */,
 				2FDD81A57755AFDD3EA487072D667E92 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D0B14C0C543F0CE61E272F257536A0DE /* Products */ = {
+		DA2A93CDCE2B7BCCBB0A8C1E953F616C /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
 				19672639458D5EF5EC76A48F6BF5A2B3 /* CropViewController.framework */,
+				1DB2178B0410252445AF883E7AEC2042 /* GSImageViewerController.framework */,
 				A20E42EBF0B4A2BCB6A7DFC6A1FE33D1 /* Pods_Look_Roulette.framework */,
 				97A93DCEF2B1499B1F84D43333829DC7 /* TOCropViewControllerBundle.bundle */,
 				AF9385ABA896226EB84EC5D36032EB86 /* YoutubePlayerView.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D4D7F65C8654BD88E9042BA8D668F71A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F5156DE4DB98DF3CE8CE8464FBA88D97 /* Alamofire.modulemap */,
-				170E592205B47D99F75127D8D8A44276 /* Alamofire.xcconfig */,
-				4595B8FE9C5AD02DC57860D4ABEF3D8B /* Alamofire-dummy.m */,
-				0E353419791F8D9C1531FD8EF3D16A5B /* Alamofire-Info.plist */,
-				6F39E9629F27A64F85548FCD557EB141 /* Alamofire-prefix.pch */,
-				01B5FF0EDA8BB67558C8A38FDDC138FF /* Alamofire-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
-			sourceTree = "<group>";
-		};
-		DA918E74642A6F056280DA0DEAC7FE4E /* CropViewController */ = {
-			isa = PBXGroup;
-			children = (
-				E1C0A4CD527362CC6BD25425ED56A3BB /* CropViewController.h */,
-				0482DDC8E221A1D8B1E81E720531D472 /* CropViewController.swift */,
-				F481D91117E40CD84AA4A01CCD4AC446 /* TOActivityCroppedImageProvider.h */,
-				E49BAA34AA95B63979FE6987798EE2C6 /* TOActivityCroppedImageProvider.m */,
-				62FB5A603F4B4FDFC44B34E773990D10 /* TOCropOverlayView.h */,
-				C1F6635D5567A36514595C16608D7A60 /* TOCropOverlayView.m */,
-				8F8A66F23DB130AE4198A530264AAFFA /* TOCroppedImageAttributes.h */,
-				3ABA12BAAD125BC25A2B34CAF4CB7B8D /* TOCroppedImageAttributes.m */,
-				186E8FCAC17FD30222968B0FCC3232B4 /* TOCropScrollView.h */,
-				24BF603A2194F8CF1782A8C34ADCA0AA /* TOCropScrollView.m */,
-				A626BB2F392C1F05591966221721B9A2 /* TOCropToolbar.h */,
-				02D9685890209B35FF811D23D1CFC46C /* TOCropToolbar.m */,
-				BDFA75329F2B54450E935BEF7915C08D /* TOCropView.h */,
-				002FE1B544123774A74CFD2A4E2AAFFC /* TOCropView.m */,
-				F0123D92ADACEF8775FE322E79D45996 /* TOCropViewConstants.h */,
-				2947BF46B194D872634B522B6FF5CF7D /* TOCropViewController.h */,
-				06F07E95A9BC4E8D94FA6DF9BF297319 /* TOCropViewController.m */,
-				5B11DDF53DB060D7E2ECC9ADB2EB49C7 /* TOCropViewControllerTransitioning.h */,
-				77CB1B9E14101AF182D2A3D557FB0ECA /* TOCropViewControllerTransitioning.m */,
-				10ABBECAC096DB6BDFC0DB65FBB41111 /* UIImage+CropRotate.h */,
-				33340F4C49630C078A9F1F8035B73A8C /* UIImage+CropRotate.m */,
-				6E6932BC313AEE2A022259E7E7849027 /* Resources */,
-				1264FE312D0E5FCEA214B013FB82221E /* Support Files */,
-			);
-			name = CropViewController;
-			path = CropViewController;
 			sourceTree = "<group>";
 		};
 		E34DCC8E2CF86B8D72232914781A840D /* iOS */ = {
@@ -524,6 +566,17 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		ED1483CBCA6CF0C68CCDAFD218E82578 /* YoutubePlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				1F8CBACEA2D59DF08F8B8CFE72B59028 /* YoutubePlayerExtras.swift */,
+				8D048E1892AE5344B837AC7E10E2F3E5 /* YoutubePlayerView.swift */,
+				B871B5F3E64AF6FC0610F003B8EDCC6B /* Support Files */,
+			);
+			name = YoutubePlayerView;
+			path = YoutubePlayerView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -532,6 +585,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				C293ACAE980C458B708074A7058FD1C5 /* YoutubePlayerView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D60D78304A9DA3F1F1C659B8E59565A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61FBB3E153AC24156C704107C7253AD0 /* Pods-Look Roulette-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6693626A5D9F3B5694ACB04C3B4D5CF7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BA9CC6D96D72F4E3C889314F04D30A1 /* GSImageViewerController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,14 +631,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1B246169F7C9093829039D60058B47C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2BA10D06D703F76BE6D9A341EE7BC490 /* Pods-Look Roulette-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -593,23 +654,42 @@
 		};
 		1C791BF038DC36E37DAA0E2621AF0234 /* Pods-Look Roulette */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 631AE10B9714A243A0BE9E2D737F36E5 /* Build configuration list for PBXNativeTarget "Pods-Look Roulette" */;
+			buildConfigurationList = 866A6AD6F6D679D605A70D7C55BF11DF /* Build configuration list for PBXNativeTarget "Pods-Look Roulette" */;
 			buildPhases = (
-				F1B246169F7C9093829039D60058B47C /* Headers */,
-				7D27692351920C3880D522AAD1A8BB2F /* Sources */,
-				AEBEC26477A23D873FF7C45BF62223A5 /* Frameworks */,
-				21394D68FBA40B13FB9981E0158554B2 /* Resources */,
+				0D60D78304A9DA3F1F1C659B8E59565A /* Headers */,
+				674A4CCACA35C39AFF46BFE27A776B3A /* Sources */,
+				B59DC4E32EAAB1CA12822FC9806FA4E2 /* Frameworks */,
+				1A40A0955E21247AA33D9B182A2D0FAF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0C90C54320F9220375CE974B93C4C290 /* PBXTargetDependency */,
-				3004522FDDFB56E8490CB39B5140C1D7 /* PBXTargetDependency */,
-				B086B62EFD84F32B29B48A93F595912D /* PBXTargetDependency */,
+				21D23D6FD6395A82C372F7A48D6EF1AD /* PBXTargetDependency */,
+				4D8882DD26A23F4E194B520DC8AB81B1 /* PBXTargetDependency */,
+				D901CA76B3E1C5BA4A1C9DAF69A4F9C2 /* PBXTargetDependency */,
+				0DD815E90DD45CBF826D68E64D567CD3 /* PBXTargetDependency */,
 			);
 			name = "Pods-Look Roulette";
 			productName = "Pods-Look Roulette";
 			productReference = A20E42EBF0B4A2BCB6A7DFC6A1FE33D1 /* Pods_Look_Roulette.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6D2C69BFD11A70F63CA31B033243D232 /* GSImageViewerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76B4DB8CD7E8A6232A691F1053837E67 /* Build configuration list for PBXNativeTarget "GSImageViewerController" */;
+			buildPhases = (
+				6693626A5D9F3B5694ACB04C3B4D5CF7 /* Headers */,
+				FD4AE35589DEF5D9414EC29D58B1B650 /* Sources */,
+				6A7F3D8ED3D5EF252563D9E94433DE1F /* Frameworks */,
+				1A159B6A546A1A7EEDF02604BA37E567 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GSImageViewerController;
+			productName = GSImageViewerController;
+			productReference = 1DB2178B0410252445AF883E7AEC2042 /* GSImageViewerController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BB4EEF23ECB2BAF774CE8EFA5AF90C40 /* CropViewController-TOCropViewControllerBundle */ = {
@@ -683,13 +763,14 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = D0B14C0C543F0CE61E272F257536A0DE /* Products */;
+			productRefGroup = DA2A93CDCE2B7BCCBB0A8C1E953F616C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
 				CC81A5995F9CEB2971CBA61ACA13FCA3 /* CropViewController */,
 				BB4EEF23ECB2BAF774CE8EFA5AF90C40 /* CropViewController-TOCropViewControllerBundle */,
+				6D2C69BFD11A70F63CA31B033243D232 /* GSImageViewerController */,
 				1C791BF038DC36E37DAA0E2621AF0234 /* Pods-Look Roulette */,
 				11A6C3DFEE59C64FAB6952F7BC187505 /* YoutubePlayerView */,
 			);
@@ -697,7 +778,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		21394D68FBA40B13FB9981E0158554B2 /* Resources */ = {
+		1A159B6A546A1A7EEDF02604BA37E567 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A40A0955E21247AA33D9B182A2D0FAF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -778,18 +866,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		674A4CCACA35C39AFF46BFE27A776B3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5014935B95F5CFE2BA019D6D1FD08B77 /* Pods-Look Roulette-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		77EDBFAA60EA1EE0BACE8BDFF3FC0C16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7D27692351920C3880D522AAD1A8BB2F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ADCB0F7146DB186998F5E9127819B721 /* Pods-Look Roulette-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -842,6 +930,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD4AE35589DEF5D9414EC29D58B1B650 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EDB8CEAB5BEAAD551181FC0A405279A /* GSImageViewerController-dummy.m in Sources */,
+				485D1B238DF108C30128132D09C8EDCC /* GSImageViewerController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -851,23 +948,29 @@
 			target = BB4EEF23ECB2BAF774CE8EFA5AF90C40 /* CropViewController-TOCropViewControllerBundle */;
 			targetProxy = D88E77966AE52F35E4B0CA1DB5D0361C /* PBXContainerItemProxy */;
 		};
-		0C90C54320F9220375CE974B93C4C290 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
-			targetProxy = FAACDA554BFC8467FBF04D7CAF8F56BD /* PBXContainerItemProxy */;
-		};
-		3004522FDDFB56E8490CB39B5140C1D7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CropViewController;
-			target = CC81A5995F9CEB2971CBA61ACA13FCA3 /* CropViewController */;
-			targetProxy = C654443A0E40E646C5C6DDE97BC614F8 /* PBXContainerItemProxy */;
-		};
-		B086B62EFD84F32B29B48A93F595912D /* PBXTargetDependency */ = {
+		0DD815E90DD45CBF826D68E64D567CD3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = YoutubePlayerView;
 			target = 11A6C3DFEE59C64FAB6952F7BC187505 /* YoutubePlayerView */;
-			targetProxy = 9752FE844D8BC15CFD3852F334020168 /* PBXContainerItemProxy */;
+			targetProxy = 409C0EA06EEBA43C616393EE0169E713 /* PBXContainerItemProxy */;
+		};
+		21D23D6FD6395A82C372F7A48D6EF1AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = BA703B90EEA4B252AED908FB47608642 /* PBXContainerItemProxy */;
+		};
+		4D8882DD26A23F4E194B520DC8AB81B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CropViewController;
+			target = CC81A5995F9CEB2971CBA61ACA13FCA3 /* CropViewController */;
+			targetProxy = 669CFF48F8BE0D5E5AA96F1DB98BD489 /* PBXContainerItemProxy */;
+		};
+		D901CA76B3E1C5BA4A1C9DAF69A4F9C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GSImageViewerController;
+			target = 6D2C69BFD11A70F63CA31B033243D232 /* GSImageViewerController */;
+			targetProxy = 55AF7F364A8ED8C242F7AE974A56F2D1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -936,9 +1039,9 @@
 			};
 			name = Debug;
 		};
-		32FFACF5C7EF092B5C9DB1740020B556 /* Debug */ = {
+		2328359498571461A15F1155E46F0219 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 149362C8E087B54264E21E5E04717D8C /* Pods-Look Roulette.debug.xcconfig */;
+			baseConfigurationReference = F588C06E53107C3B536BE44B556A8C76 /* Pods-Look Roulette.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -969,10 +1072,11 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1034,9 +1138,45 @@
 			};
 			name = Release;
 		};
+		546F2FF6654F08B3A35B1FF98BB7D7B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE38828A4BDDCA8BC38A5C951798C05A /* GSImageViewerController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GSImageViewerController/GSImageViewerController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GSImageViewerController/GSImageViewerController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GSImageViewerController/GSImageViewerController.modulemap";
+				PRODUCT_MODULE_NAME = GSImageViewerController;
+				PRODUCT_NAME = GSImageViewerController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		583BD36AA820413AE16030EDE7188822 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27AE8101CE30F7DDEA6A29848329A3D6 /* CropViewController.xcconfig */;
+			baseConfigurationReference = 63ECFADBB680176D24659C46A48208B6 /* CropViewController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CropViewController";
@@ -1050,12 +1190,10 @@
 			};
 			name = Debug;
 		};
-		5BD342D8089B0BF58BEF2C87B57DA5E0 /* Release */ = {
+		709D2CB2EACA2B94B946C778E21D2EAE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F588C06E53107C3B536BE44B556A8C76 /* Pods-Look Roulette.release.xcconfig */;
+			baseConfigurationReference = EE38828A4BDDCA8BC38A5C951798C05A /* GSImageViewerController.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1065,33 +1203,31 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Look Roulette/Pods-Look Roulette-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/GSImageViewerController/GSImageViewerController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GSImageViewerController/GSImageViewerController-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Look Roulette/Pods-Look Roulette.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/GSImageViewerController/GSImageViewerController.modulemap";
+				PRODUCT_MODULE_NAME = GSImageViewerController;
+				PRODUCT_NAME = GSImageViewerController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		87FCC2B9F5E6F9D87414A5E3DBD10F04 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 170E592205B47D99F75127D8D8A44276 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 6D5175F056EDF426C829824E04FFC5CF /* Alamofire.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1128,7 +1264,7 @@
 		};
 		9955F6DB85328235C7DC9136534D30E6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27AE8101CE30F7DDEA6A29848329A3D6 /* CropViewController.xcconfig */;
+			baseConfigurationReference = 63ECFADBB680176D24659C46A48208B6 /* CropViewController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1164,7 +1300,7 @@
 		};
 		BFAF160F64A72820D958C44AC76871EE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27AE8101CE30F7DDEA6A29848329A3D6 /* CropViewController.xcconfig */;
+			baseConfigurationReference = 63ECFADBB680176D24659C46A48208B6 /* CropViewController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1199,7 +1335,7 @@
 		};
 		CA63F964AE990838F944EE64CCC409E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 170E592205B47D99F75127D8D8A44276 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 6D5175F056EDF426C829824E04FFC5CF /* Alamofire.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1233,9 +1369,47 @@
 			};
 			name = Debug;
 		};
+		D34ABC2422F14D76BB8E961E6C1801E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 149362C8E087B54264E21E5E04717D8C /* Pods-Look Roulette.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Look Roulette/Pods-Look Roulette-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Look Roulette/Pods-Look Roulette.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		D48C184AB794B706AEF6927209881DE8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27AE8101CE30F7DDEA6A29848329A3D6 /* CropViewController.xcconfig */;
+			baseConfigurationReference = 63ECFADBB680176D24659C46A48208B6 /* CropViewController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CropViewController";
@@ -1251,7 +1425,7 @@
 		};
 		F331E87C5F6C024CEBC06AD479504682 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C8835ED26E28601E8AFA850D6DD16A0 /* YoutubePlayerView.xcconfig */;
+			baseConfigurationReference = 32DE042564FEE8F65F77A365C3D9E77A /* YoutubePlayerView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1287,7 +1461,7 @@
 		};
 		F50DAA4D8AF1A55D3C6E1B16E58F4931 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C8835ED26E28601E8AFA850D6DD16A0 /* YoutubePlayerView.xcconfig */;
+			baseConfigurationReference = 32DE042564FEE8F65F77A365C3D9E77A /* YoutubePlayerView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1341,11 +1515,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		631AE10B9714A243A0BE9E2D737F36E5 /* Build configuration list for PBXNativeTarget "Pods-Look Roulette" */ = {
+		76B4DB8CD7E8A6232A691F1053837E67 /* Build configuration list for PBXNativeTarget "GSImageViewerController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				32FFACF5C7EF092B5C9DB1740020B556 /* Debug */,
-				5BD342D8089B0BF58BEF2C87B57DA5E0 /* Release */,
+				709D2CB2EACA2B94B946C778E21D2EAE /* Debug */,
+				546F2FF6654F08B3A35B1FF98BB7D7B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		866A6AD6F6D679D605A70D7C55BF11DF /* Build configuration list for PBXNativeTarget "Pods-Look Roulette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D34ABC2422F14D76BB8E961E6C1801E1 /* Debug */,
+				2328359498571461A15F1155E46F0219 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

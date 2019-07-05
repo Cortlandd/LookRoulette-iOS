@@ -8,5 +8,6 @@ target 'Look Roulette' do
   # Pods for Look Roulette
   pod 'YoutubePlayerView'
   pod 'Alamofire', '~> 5.0.0-beta.6'
-  pod 'CropViewController'
+  pod 'CropViewController', '~> 2.5.0'
+  pod 'GSImageViewerController', '~> 1.6.0'
 end
