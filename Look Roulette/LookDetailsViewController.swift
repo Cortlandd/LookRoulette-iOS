@@ -11,17 +11,22 @@ import YoutubePlayerView
 import Alamofire.Swift
 import CropViewController
 import GSImageViewerController
+import AWSS3
 
 class LookDetailsViewController: UIViewController, LookModifiedDelegate {
-    
     
     func userModifiedLook(modifiedLook: UIImage) {
         _thumbnailImage.image = modifiedLook
     }
     
+    var transferAlert: UIAlertController!
+    
     var items: Items!
     
     var modifiedLook: UIImage!
+    
+    var nomakeupImgURL: String!
+    var makeupImgURL: String!
     
     @IBOutlet weak var _playerView: YoutubePlayerView!
     @IBOutlet weak var _thumbnailImage: UIImageView!
@@ -30,42 +35,41 @@ class LookDetailsViewController: UIViewController, LookModifiedDelegate {
     
     @IBAction func transferImage(_ sender: Any) {
         
-        let transferAlert = UIAlertController(title: nil, message: "Transferring Look...", preferredStyle: .alert)
-        transferAlert.view.tintColor = UIColor.black
-        let loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50)) as UIActivityIndicatorView
-        loadingIndicator.hidesWhenStopped = true
-        loadingIndicator.style = .gray
-        loadingIndicator.startAnimating()
-        transferAlert.view.addSubview(loadingIndicator)
         present(transferAlert, animated: true, completion: nil)
         
-        let nomakeupData = _defaultImage.image!.pngData()
-        let makeupData = _thumbnailImage.image!.pngData()
+        let group = DispatchGroup()
         
-        let session = Alamofire.Session.default
-
-        session.upload(
-            multipartFormData: { multipartFormData in
-                multipartFormData.append(nomakeupData!, withName: "nomakeup_file", fileName: "nomakeup.png", mimeType: "image/png")
-                multipartFormData.append(makeupData!, withName: "makeup_file", fileName: "makeup.png", mimeType: "image/png")
-        }, usingThreshold: UInt64(0),
-           to: "https://lookroulette.herokuapp.com/api/v1/makeup_transfer").responseJSON { (response) in
-            
-            switch response.result {
-            case .success(let value):
-                if let json = value as? [String: Any] {
-                    self._transferImage.load(url: URL(string: json["transferImage"] as! String)!)
-                    transferAlert.dismiss(animated: true, completion: nil)
+        group.enter()
+        DispatchQueue.main.async {
+            self.uploadNoMakeupImage(image: self._defaultImage) { publicUrl, error in
+                if let error = error {
+                    print("error: \(error)")
                 }
-            case .failure:
-                transferAlert.dismiss(animated: false, completion: nil)
-                let alertController = UIAlertController(title: "Transfer", message:
-                    "There was an error during Transfer. Check your Default Image or Look. If the error persists, contact support.", preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
-                self.present(alertController, animated: true, completion: nil)
-                break
+                
+                if let url = publicUrl {
+                    self.nomakeupImgURL = url
+                    group.leave()
+                }
             }
-            
+        }
+        
+        group.enter()
+        DispatchQueue.main.async {
+            self.uploadMakeupImage(image: self._thumbnailImage) { publicUrl, error in
+                if let error = error {
+                    print("error: \(error)")
+                }
+                
+                if let url = publicUrl {
+                    self.makeupImgURL = url
+                    group.leave()
+                }
+            }
+        }
+        
+        group.notify(queue: .main) {
+            // Run transfer
+            self.transfer()
         }
         
     }
@@ -86,6 +90,9 @@ class LookDetailsViewController: UIViewController, LookModifiedDelegate {
         _thumbnailImage.addGestureRecognizer(setImageTapGesture())
         _defaultImage.addGestureRecognizer(setImageTapGesture())
         _transferImage.addGestureRecognizer(setImageTapGesture())
+        
+        initTransferAlert()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -124,14 +131,15 @@ class LookDetailsViewController: UIViewController, LookModifiedDelegate {
         let modifyAlert = UIAlertController(title: nil, message: "Modify the current look for a better Transfer.", preferredStyle: .actionSheet)
         
         // TODO: Remove until I can figure out capturing on device
-//        let modify = UIAlertAction(title: "Modify Look", style: .default) { (action: UIAlertAction) in
-//            self.performSegue(withIdentifier: "ModifyLook", sender: self)
-//
-//        }
+        /*
+        let modify = UIAlertAction(title: "Modify Look", style: .default) { (action: UIAlertAction) in
+            self.performSegue(withIdentifier: "ModifyLook", sender: self)
+
+        }
+         */
         
         let crop = UIAlertAction(title: "Crop Look", style: .default) { (action: UIAlertAction) in
             self.cropLook()
-            
         }
         
         let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
@@ -140,6 +148,72 @@ class LookDetailsViewController: UIViewController, LookModifiedDelegate {
         modifyAlert.addAction(crop)
         modifyAlert.addAction(cancel)
         self.present(modifyAlert, animated: true, completion: nil)
+    }
+    
+    func uploadNoMakeupImage(image: UIImageView, uploadCompletion: @escaping (_ publicUrl: String?, _ error: String?) -> ()) {
+        
+        print("Uploading No Makeup Image...")
+        
+        let ranTransferName = "nomakeup-\(randomString(length: 6)).png"
+        let fileURL = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(ranTransferName)
+        let nomakeupData = image.image?.pngData()
+        
+        do {
+            try nomakeupData?.write(to: fileURL)
+        } catch let error {
+            print(error)
+        }
+        
+        let uploadExpression = AWSS3TransferUtilityUploadExpression()
+        uploadExpression.setValue("public-read", forRequestHeader: "x-amz-acl")
+        
+        let completionHandler: AWSS3TransferUtilityUploadCompletionHandlerBlock = { (task, error) -> Void in
+            if let error = error {
+                uploadCompletion(nil, error.localizedDescription)
+            } else {
+                let url = AWSS3.default().configuration.endpoint.url.absoluteURL
+                let publicURL = url.appendingPathComponent(task.bucket).appendingPathComponent(task.key)
+                uploadCompletion(publicURL.absoluteString, nil)
+            }
+            
+        }
+        
+        let transferManager = AWSS3TransferUtility.default()
+        
+        transferManager.uploadFile(fileURL, bucket: "lookru-bucket", key: ranTransferName, contentType: "image/png", expression: uploadExpression, completionHandler: completionHandler)
+        
+    }
+    
+    func uploadMakeupImage(image: UIImageView, uploadCompletion: @escaping (_ publicUrl: String?, _ error: String?) -> ()) {
+        
+        let ranTransferName = "makeup-\(randomString(length: 6)).png"
+        let fileURL = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(ranTransferName)
+        let makeupData = image.image?.pngData()
+        
+        do {
+            try makeupData?.write(to: fileURL)
+        } catch let error {
+            print(error)
+        }
+        
+        let uploadExpression = AWSS3TransferUtilityUploadExpression()
+        uploadExpression.setValue("public-read", forRequestHeader: "x-amz-acl")
+        
+        let completionHandler: AWSS3TransferUtilityUploadCompletionHandlerBlock = { (task, error) -> Void in
+            if let error = error {
+                uploadCompletion(nil, error.localizedDescription)
+            } else {
+                let url = AWSS3.default().configuration.endpoint.url.absoluteURL
+                let publicURL = url.appendingPathComponent(task.bucket).appendingPathComponent(task.key)
+                uploadCompletion(publicURL.absoluteString, nil)
+            }
+            
+        }
+        
+        let transferManager = AWSS3TransferUtility.default()
+        
+        transferManager.uploadFile(fileURL, bucket: "lookru-bucket", key: ranTransferName, contentType: "image/png", expression: uploadExpression, completionHandler: completionHandler)
+        
     }
     
     func cropLook() {
@@ -153,6 +227,60 @@ class LookDetailsViewController: UIViewController, LookModifiedDelegate {
         return tapGesture
     }
     
+    func initTransferAlert() {
+        transferAlert = UIAlertController(title: nil, message: "Transferring Look", preferredStyle: .alert)
+        transferAlert.view.tintColor = UIColor.black
+        let loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50)) as UIActivityIndicatorView
+        loadingIndicator.hidesWhenStopped = true
+        loadingIndicator.style = .gray
+        loadingIndicator.startAnimating()
+        transferAlert.view.addSubview(loadingIndicator)
+    }
+    
+    func transfer() {
+        
+        let session = Alamofire.SessionManager()
+        
+        let params: Parameters = [
+            "nomakeup_url": self.nomakeupImgURL!.description,
+            "makeup_url": self.makeupImgURL!.description
+        ]
+        
+        let headers = [
+            "Content-Type": "text/html; charset=utf-8"
+        ]
+        
+        if nomakeupImgURL != nil && makeupImgURL != nil {
+            Alamofire.request("https://lookroulette.herokuapp.com/api/v1/makeup_transfer", method: .post, parameters: params, encoding: URLEncoding.queryString, headers: headers).responseJSON { (response) in
+                print("No Makeup url: \(self.nomakeupImgURL!)")
+                print("Makeup url: \(self.makeupImgURL!)")
+                switch response.result {
+                case .success(let value):
+                    print("Successful Transfer")
+                    if let json = value as? [String: Any] {
+                        self._transferImage.load(url: URL(string: json["transferImage"] as! String)!)
+                        self.transferAlert.dismiss(animated: true, completion: nil)
+                    }
+                case .failure:
+                    print("Failed Transfer")
+                    self.transferAlert.dismiss(animated: false, completion: nil)
+                    let alertController = UIAlertController(title: "Transfer", message:
+                        "There was an error during Transfer. Check your Default Image or Look. If the error persists, contact support.", preferredStyle: .alert)
+                    alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+                    self.present(alertController, animated: true, completion: nil)
+                    break
+                }
+                
+            }
+        } else {
+            self.transferAlert.dismiss(animated: false, completion: nil)
+            let alertController = UIAlertController(title: "Transfer", message:
+                "An error occurred. Check your Default Image and Look.", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+            self.present(alertController, animated: true, completion: nil)
+        }
+    }
+    
     @objc func tappedImage(tapGesture: UITapGestureRecognizer) {
         if let image = tapGesture.view as? UIImageView {
             let imgInfo = GSImageInfo(image: image.image!, imageMode: .aspectFit)
@@ -161,6 +289,11 @@ class LookDetailsViewController: UIViewController, LookModifiedDelegate {
             present(imgViewer, animated: true, completion: nil)
             
         }
+    }
+    
+    func randomString(length: Int) -> String {
+        let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        return String((0..<length).map{ _ in letters.randomElement()! })
     }
     
 
